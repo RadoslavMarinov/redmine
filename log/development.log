@@ -1,0 +1,43 @@
+Started GET "/" for 127.0.0.1 at 2019-02-16 16:24:52 +0200
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 33ms
+
+
+  
+Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+app/models/setting.rb:235:in `check_cache'
+app/controllers/application_controller.rb:90:in `user_setup'
+Started GET "/" for 127.0.0.1 at 2019-02-16 16:25:22 +0200
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+app/models/setting.rb:235:in `check_cache'
+app/controllers/application_controller.rb:90:in `user_setup'
+Started GET "/" for 127.0.0.1 at 2019-02-16 16:25:50 +0200
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 24ms
+
+
+  
+Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+app/models/setting.rb:235:in `check_cache'
+app/controllers/application_controller.rb:90:in `user_setup'
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:30:38 +0200
+Processing by AdminController#plugins as HTML
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Completed 500 Internal Server Error in 43ms
+
+
+  
+Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+app/models/user.rb:441:in `verify_session_token'
+app/controllers/application_controller.rb:77:in `session_expired?'
+app/controllers/application_controller.rb:67:in `session_expiration'

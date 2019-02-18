@@ -1,0 +1,2124 @@
+Migrating to Setup (1)
+Migrating to IssueMove (2)
+Migrating to IssueAddNote (3)
+Migrating to ExportPdf (4)
+Migrating to IssueStartDate (5)
+Migrating to CalendarAndActivity (6)
+Migrating to CreateJournals (7)
+Migrating to CreateUserPreferences (8)
+Migrating to AddHideMailPref (9)
+Migrating to CreateComments (10)
+Migrating to AddNewsCommentsCount (11)
+Migrating to AddCommentsPermissions (12)
+Migrating to CreateQueries (13)
+Migrating to AddQueriesPermissions (14)
+Migrating to CreateRepositories (15)
+Migrating to AddRepositoriesPermissions (16)
+Migrating to CreateSettings (17)
+Migrating to SetDocAndFilesNotifications (18)
+Migrating to AddIssueStatusPosition (19)
+Migrating to AddRolePosition (20)
+Migrating to AddTrackerPosition (21)
+Migrating to SerializePossiblesValues (22)
+Migrating to AddTrackerIsInRoadmap (23)
+Migrating to AddRoadmapPermission (24)
+Migrating to AddSearchPermission (25)
+Migrating to AddRepositoryLoginAndPassword (26)
+Migrating to CreateWikis (27)
+Migrating to CreateWikiPages (28)
+Migrating to CreateWikiContents (29)
+Migrating to AddProjectsFeedsPermissions (30)
+Migrating to AddRepositoryRootUrl (31)
+Migrating to CreateTimeEntries (32)
+Migrating to AddTimelogPermissions (33)
+Migrating to CreateChangesets (34)
+Migrating to CreateChanges (35)
+Migrating to AddChangesetCommitDate (36)
+Migrating to AddProjectIdentifier (37)
+Migrating to AddCustomFieldIsFilter (38)
+Migrating to CreateWatchers (39)
+Migrating to CreateChangesetsIssues (40)
+Migrating to RenameCommentToComments (41)
+Migrating to CreateIssueRelations (42)
+Migrating to AddRelationsPermissions (43)
+Migrating to SetLanguageLengthToFive (44)
+Migrating to CreateBoards (45)
+Migrating to CreateMessages (46)
+Migrating to AddBoardsPermissions (47)
+Migrating to AllowNullVersionEffectiveDate (48)
+Migrating to AddWikiDestroyPagePermission (49)
+Migrating to AddWikiAttachmentsPermissions (50)
+Migrating to AddProjectStatus (51)
+Migrating to AddChangesRevision (52)
+Migrating to AddChangesBranch (53)
+Migrating to AddChangesetsScmid (54)
+Migrating to AddRepositoriesType (55)
+Migrating to AddRepositoriesChangesPermission (56)
+Migrating to AddVersionsWikiPageTitle (57)
+Migrating to AddIssueCategoriesAssignedToId (58)
+Migrating to AddRolesAssignable (59)
+Migrating to ChangeChangesetsCommitterLimit (60)
+Migrating to AddRolesBuiltin (61)
+Migrating to InsertBuiltinRoles (62)
+Migrating to AddRolesPermissions (63)
+Migrating to DropPermissions (64)
+Migrating to AddSettingsUpdatedOn (65)
+Migrating to AddCustomValueCustomizedIndex (66)
+Migrating to CreateWikiRedirects (67)
+Migrating to CreateEnabledModules (68)
+Migrating to AddIssuesEstimatedHours (69)
+Migrating to ChangeAttachmentsContentTypeLimit (70)
+Migrating to AddQueriesColumnNames (71)
+Migrating to AddEnumerationsPosition (72)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Migrating to AddEnumerationsIsDefault (73)
+Migrating to AddAuthSourcesTls (74)
+Migrating to AddMembersMailNotification (75)
+Migrating to AllowNullPosition (76)
+Migrating to RemoveIssueStatusesHtmlColor (77)
+Migrating to AddCustomFieldsPosition (78)
+Migrating to AddUserPreferencesTimeZone (79)
+Migrating to AddUsersType (80)
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Migrating to CreateProjectsTrackers (81)
+Migrating to AddMessagesLocked (82)
+Migrating to AddMessagesSticky (83)
+Migrating to ChangeAuthSourcesAccountLimit (84)
+Migrating to AddRoleTrackerOldStatusIndexToWorkflows (85)
+Migrating to AddCustomFieldsSearchable (86)
+Migrating to ChangeProjectsDescriptionToText (87)
+Migrating to AddCustomFieldsDefaultValue (88)
+Migrating to AddAttachmentsDescription (89)
+Migrating to ChangeVersionsNameLimit (90)
+Migrating to ChangeChangesetsRevisionToString (91)
+Migrating to ChangeChangesFromRevisionToString (92)
+Migrating to AddWikiPagesProtected (93)
+Migrating to ChangeProjectsHomepageLimit (94)
+Migrating to AddWikiPagesParentId (95)
+Migrating to AddCommitAccessPermission (96)
+Migrating to AddViewWikiEditsPermission (97)
+Migrating to SetTopicAuthorsAsWatchers (98)
+Migrating to AddDeleteWikiPagesAttachmentsPermission (99)
+Migrating to AddChangesetsUserId (100)
+Migrating to PopulateChangesetsUserId (101)
+Migrating to AddCustomFieldsEditable (102)
+Migrating to SetCustomFieldsEditable (103)
+Migrating to AddProjectsLftAndRgt (104)
+Migrating to BuildProjectsTree (105)
+Migrating to RemoveProjectsProjectsCount (106)
+Migrating to AddOpenIdAuthenticationTables (107)
+Migrating to AddIdentityUrlToUsers (108)
+Migrating to AddWatchersUserIdTypeIndex (20090214190337)
+Migrating to AddQueriesSortCriteria (20090312172426)
+Migrating to AddProjectsTrackersUniqueIndex (20090312194159)
+Migrating to ExtendSettingsName (20090318181151)
+Migrating to AddTypeToEnumerations (20090323224724)
+Migrating to UpdateEnumerationsToSti (20090401221305)
+Migrating to AddActiveFieldToEnumerations (20090401231134)
+Migrating to AddProjectToEnumerations (20090403001910)
+Migrating to AddParentIdToEnumerations (20090406161854)
+Migrating to AddQueriesGroupBy (20090425161243)
+Migrating to CreateMemberRoles (20090503121501)
+Migrating to PopulateMemberRoles (20090503121505)
+Migrating to DropMembersRoleId (20090503121510)
+Migrating to FixMessagesStickyNull (20090614091200)
+Migrating to PopulateUsersType (20090704172350)
+Migrating to CreateGroupsUsers (20090704172355)
+Migrating to AddMemberRolesInheritedFrom (20090704172358)
+Migrating to FixUsersCustomValues (20091010093521)
+Migrating to AddMissingIndexesToWorkflows (20091017212227)
+Migrating to AddMissingIndexesToCustomFieldsProjects (20091017212457)
+Migrating to AddMissingIndexesToMessages (20091017212644)
+Migrating to AddMissingIndexesToRepositories (20091017212938)
+Migrating to AddMissingIndexesToComments (20091017213027)
+Migrating to AddMissingIndexesToEnumerations (20091017213113)
+Migrating to AddMissingIndexesToWikiPages (20091017213151)
+Migrating to AddMissingIndexesToWatchers (20091017213228)
+Migrating to AddMissingIndexesToAuthSources (20091017213257)
+Migrating to AddMissingIndexesToDocuments (20091017213332)
+Migrating to AddMissingIndexesToTokens (20091017213444)
+Migrating to AddMissingIndexesToChangesets (20091017213536)
+Migrating to AddMissingIndexesToIssueCategories (20091017213642)
+Migrating to AddMissingIndexesToMemberRoles (20091017213716)
+Migrating to AddMissingIndexesToBoards (20091017213757)
+Migrating to AddMissingIndexesToUserPreferences (20091017213835)
+Migrating to AddMissingIndexesToIssues (20091017213910)
+Migrating to AddMissingIndexesToMembers (20091017214015)
+Migrating to AddMissingIndexesToCustomFields (20091017214107)
+Migrating to AddMissingIndexesToQueries (20091017214136)
+Migrating to AddMissingIndexesToTimeEntries (20091017214236)
+Migrating to AddMissingIndexesToNews (20091017214308)
+Migrating to AddMissingIndexesToUsers (20091017214336)
+Migrating to AddMissingIndexesToAttachments (20091017214406)
+Migrating to AddMissingIndexesToWikiContents (20091017214440)
+Migrating to AddMissingIndexesToCustomValues (20091017214519)
+Migrating to AddMissingIndexesToJournals (20091017214611)
+Migrating to AddMissingIndexesToIssueRelations (20091017214644)
+Migrating to AddMissingIndexesToWikiRedirects (20091017214720)
+Migrating to AddMissingIndexesToCustomFieldsTrackers (20091017214750)
+Migrating to AddActivityIndexes (20091025163651)
+Migrating to AddVersionsStatus (20091108092559)
+Migrating to AddViewIssuesPermission (20091114105931)
+Migrating to AddDefaultDoneRatioToIssueStatus (20091123212029)
+Migrating to AddVersionsSharing (20091205124427)
+Migrating to AddLftAndRgtIndexesToProjects (20091220183509)
+Migrating to AddIndexToSettingsName (20091220183727)
+Migrating to AddIndexesToIssueStatus (20091220184736)
+Migrating to RemoveEnumerationsOpt (20091225164732)
+Migrating to ChangeWikiContentsTextLimit (20091227112908)
+Migrating to ChangeUsersMailNotificationToString (20100129193402)
+Migrating to UpdateMailNotificationValues (20100129193813)
+Migrating to AddIndexOnChangesetsScmid (20100221100219)
+Migrating to AddIssuesNestedSetsColumns (20100313132032)
+Migrating to AddIndexOnIssuesNestedSet (20100313171051)
+Migrating to ChangeChangesPathLengthLimit (20100705164950)
+Migrating to EnableCalendarAndGanttModulesWhereAppropriate (20100819172912)
+Migrating to AddUniqueIndexOnMembers (20101104182107)
+Migrating to AddCustomFieldsVisible (20101107130441)
+Migrating to ChangeProjectsNameLimit (20101114115114)
+Migrating to ChangeProjectsIdentifierLimit (20101114115359)
+Migrating to AddWorkflowsAssigneeAndAuthor (20110220160626)
+Migrating to AddUsersSalt (20110223180944)
+Migrating to SaltUserPasswords (20110223180953)
+Migrating to AddRepositoriesPathEncoding (20110224000000)
+Migrating to ChangeRepositoriesPasswordLimit (20110226120112)
+Migrating to ChangeAuthSourcesAccountPasswordLimit (20110226120132)
+Migrating to ChangeJournalDetailsValuesToText (20110227125750)
+Migrating to AddRepositoriesLogEncoding (20110228000000)
+Migrating to CopyRepositoriesLogEncoding (20110228000100)
+Migrating to AddIndexToUsersType (20110401192910)
+Migrating to AddRolesIssuesVisibility (20110408103312)
+Migrating to AddIssuesIsPrivate (20110412065600)
+Migrating to AddRepositoriesExtraInfo (20110511000000)
+Migrating to CreateChangesetParents (20110902000000)
+Migrating to AddUniqueIndexToIssueRelations (20111201201315)
+Migrating to AddRepositoriesIdentifier (20120115143024)
+Migrating to AddRepositoriesIsDefault (20120115143100)
+Migrating to SetDefaultRepositories (20120115143126)
+Migrating to AddCustomFieldsMultiple (20120127174243)
+Migrating to ChangeUsersLoginLimit (20120205111326)
+Migrating to ChangeAttachmentsContainerDefaults (20120223110929)
+Migrating to AddAuthSourcesFilter (20120301153455)
+Migrating to ChangeRepositoriesToFullSti (20120422150750)
+Migrating to AddTrackersFieldsBits (20120705074331)
+Migrating to AddAuthSourcesTimeout (20120707064544)
+Migrating to AddWorkflowsType (20120714122000)
+Migrating to UpdateWorkflowsToSti (20120714122100)
+Migrating to AddWorkflowsRuleFields (20120714122200)
+Migrating to AddBoardsParentId (20120731164049)
+Migrating to AddJournalsPrivateNotes (20120930112914)
+Migrating to AddEnumerationsPositionName (20121026002032)
+Migrating to PopulateEnumerationsPositionName (20121026003537)
+Migrating to AddQueriesType (20121209123234)
+Migrating to UpdateQueriesToSti (20121209123358)
+Migrating to AddAttachmentsDiskDirectory (20121213084931)
+Migrating to SplitDocumentsPermissions (20130110122628)
+Migrating to AddUniqueIndexOnTokensValue (20130201184705)
+Migrating to AddProjectsInheritMembers (20130202090625)
+Migrating to AddUniqueIndexOnCustomFieldsTrackers (20130207175206)
+Migrating to AddUniqueIndexOnCustomFieldsProjects (20130207181455)
+Migrating to ChangeUsersLastnameLengthTo255 (20130215073721)
+Migrating to AddIssuesClosedOn (20130215111127)
+Migrating to PopulateIssuesClosedOn (20130215111141)
+Migrating to RemoveIssuesDefaultFkValues (20130217094251)
+Migrating to CreateQueriesRoles (20130602092539)
+Migrating to AddQueriesVisibility (20130710182539)
+Migrating to CreateCustomFieldsRoles (20130713104233)
+Migrating to AddQueriesOptions (20130713111657)
+Migrating to AddUsersMustChangePasswd (20130729070143)
+Migrating to RemoveEolsFromAttachmentsFilename (20130911193200)
+Migrating to SupportForMultipleCommitKeywords (20131004113137)
+Migrating to AddRepositoriesCreatedOn (20131005100610)
+Migrating to AddCustomFieldsFormatStore (20131124175346)
+Migrating to AddCustomFieldsDescription (20131210180802)
+Migrating to RemoveCustomFieldsMinMaxLengthDefaultValues (20131214094309)
+Migrating to StoreRelationTypeInJournalDetails (20131215104612)
+Migrating to DeleteOrphanTimeEntriesCustomValues (20131218183023)
+Migrating to ChangeChangesetsCommentsLimit (20140228130325)
+Migrating to AddPasswordChangedAtToUser (20140903143914)
+Migrating to InsertBuiltinGroups (20140920094058)
+Migrating to AddTrackersDefaultStatusId (20141029181752)
+Migrating to RemoveIssueStatusesIsDefault (20141029181824)
+Migrating to AddRolesUsersVisibility (20141109112308)
+Migrating to AddWikiRedirectsRedirectsToWikiId (20141122124142)
+Migrating to CreateEmailAddresses (20150113194759)
+Migrating to PopulateEmailAddresses (20150113211532)
+Migrating to RemoveUsersMail (20150113213922)
+Migrating to AddEmailAddressesUserIdIndex (20150113213955)
+Migrating to ReplaceMoveIssuesPermission (20150208105930)
+Migrating to ChangeDocumentsTitleLimit (20150510083747)
+Migrating to ClearEstimatedHoursOnParentIssues (20150525103953)
+Migrating to AddRolesTimeEntriesVisibility (20150526183158)
+Migrating to AddRolesAllRolesManaged (20150528084820)
+Migrating to CreateRolesManagedRoles (20150528092912)
+Migrating to AddUniqueIndexOnRolesManagedRoles (20150528093249)
+Migrating to InsertAllowedStatusesForNewIssues (20150725112753)
+Migrating to CreateImports (20150730122707)
+Migrating to CreateImportItems (20150730122735)
+Migrating to ChangeTimeEntriesCommentsLimitTo1024 (20150921204850)
+Migrating to ChangeWikiContentsCommentsLimitTo1024 (20150921210243)
+Migrating to ChangeAttachmentsFilesizeLimitTo8 (20151020182334)
+Migrating to FixCommaInUserFormatSettingValue (20151020182731)
+Migrating to ChangeIssueCategoriesNameLimitTo60 (20151021184614)
+Migrating to ChangeAuthSourcesFilterToText (20151021185456)
+Migrating to ChangeUserPreferencesHideMailDefaultToTrue (20151021190616)
+Migrating to AddTokensUpdatedOn (20151024082034)
+Migrating to CreateCustomFieldEnumerations (20151025072118)
+Migrating to AddProjectsDefaultVersionId (20151031095005)
+Migrating to ForcePasswordResetDuringSetup (20160404080304)
+Migrating to RemovePositionDefaults (20160416072926)
+Migrating to AddRolesSettings (20160529063352)
+Migrating to AddTrackerIdIndexToWorkflows (20161001122012)
+Migrating to AddIndexOnMemberRolesInheritedFrom (20161002133421)
+Migrating to ChangeIssuesDescriptionLimit (20161010081301)
+Migrating to ChangeJournalDetailsValueLimit (20161010081528)
+Migrating to ChangeJournalsNotesLimit (20161010081600)
+Migrating to AddIndexOnChangesetsIssuesIssueId (20161126094932)
+Migrating to AddIndexOnIssuesParentId (20161220091118)
+Migrating to AddIndexOnDiskFilenameToAttachments (20170207050700)
+Migrating to ChangeAttachmentsDigestLimitTo64 (20170302015225)
+Migrating to AddProjectDefaultAssignedToId (20170309214320)
+Migrating to ChangeRepositoriesExtraInfoLimit (20170320051650)
+Migrating to AddViewNewsToAllExistingRoles (20170418090031)
+Migrating to AddViewMessagesToAllExistingRoles (20170419144536)
+Migrating to RenameCommentsToContent (20170723112801)
+Migrating to AddVerifyPeerToAuthSources (20180913072918)
+Migrating to ChangeSqliteBooleansTo0And1 (20180923082945)
+Migrating to ChangeSqliteBooleansDefault (20180923091603)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/" for 127.0.0.1 at 2019-02-15 18:29:50 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (5.6ms)
+Completed 200 OK in 164ms (Views: 17.7ms | ActiveRecord: 12.9ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 19:42:44 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 19:48:24 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 1.1ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-15 19:48:25 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (3.0ms)
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 1.5ms)
+Started GET "/activity" for 127.0.0.1 at 2019-02-15 19:48:32 +0200
+Processing by ActivitiesController#index as HTML
+  Current user: anonymous
+  Rendering activities/index.html.erb within layouts/base
+  Rendered activities/_activities.html.erb (0.6ms)
+  Rendered activities/index.html.erb within layouts/base (7.9ms)
+Completed 200 OK in 56ms (Views: 11.7ms | ActiveRecord: 7.0ms)
+Started GET "/issues" for 127.0.0.1 at 2019-02-15 19:48:33 +0200
+Processing by IssuesController#index as HTML
+  Current user: anonymous
+  Rendering issues/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (9.8ms)
+  Rendered queries/_columns.html.erb (2.4ms)
+  Rendered queries/_query_form.html.erb (18.8ms)
+  Rendered issues/_sidebar.html.erb (2.5ms)
+  Rendered issues/index.html.erb within layouts/base (32.4ms)
+Completed 200 OK in 101ms (Views: 37.1ms | ActiveRecord: 6.5ms)
+Started GET "/time_entries" for 127.0.0.1 at 2019-02-15 19:48:34 +0200
+Processing by TimelogController#index as HTML
+  Current user: anonymous
+  Rendering timelog/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (2.4ms)
+  Rendered queries/_columns.html.erb (0.8ms)
+  Rendered queries/_query_form.html.erb (4.7ms)
+  Rendered timelog/_date_range.html.erb (7.0ms)
+  Rendered timelog/index.html.erb within layouts/base (11.9ms)
+Completed 200 OK in 60ms (Views: 16.8ms | ActiveRecord: 3.8ms)
+Started GET "/issues/gantt" for 127.0.0.1 at 2019-02-15 19:48:35 +0200
+Processing by GanttsController#show as HTML
+  Current user: anonymous
+  Rendering gantts/show.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (4.0ms)
+  Rendered issues/_sidebar.html.erb (1.8ms)
+  Rendered gantts/show.html.erb within layouts/base (30.2ms)
+Completed 200 OK in 48ms (Views: 32.8ms | ActiveRecord: 4.3ms)
+Started GET "/issues/calendar" for 127.0.0.1 at 2019-02-15 19:48:36 +0200
+Processing by CalendarsController#show as HTML
+  Current user: anonymous
+  Rendering calendars/show.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (4.2ms)
+  Rendered common/_calendar.html.erb (2.2ms)
+  Rendered issues/_sidebar.html.erb (2.0ms)
+  Rendered calendars/show.html.erb within layouts/base (12.3ms)
+Completed 200 OK in 37ms (Views: 16.0ms | ActiveRecord: 3.7ms)
+Started GET "/news" for 127.0.0.1 at 2019-02-15 19:48:37 +0200
+Processing by NewsController#index as HTML
+  Current user: anonymous
+  Rendering news/index.html.erb within layouts/base
+  Rendered news/index.html.erb within layouts/base (6.0ms)
+Completed 200 OK in 47ms (Views: 29.0ms | ActiveRecord: 2.5ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-15 19:48:38 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (2.1ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 2.7ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/projects" for 127.0.0.1 at 2019-02-15 20:12:42 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (9.1ms)
+Completed 200 OK in 321ms (Views: 31.3ms | ActiveRecord: 22.2ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-15 20:12:46 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (3.7ms)
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 2.2ms)
+Started GET "/issues" for 127.0.0.1 at 2019-02-15 20:12:51 +0200
+Processing by IssuesController#index as HTML
+  Current user: anonymous
+  Rendering issues/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (17.3ms)
+  Rendered queries/_columns.html.erb (4.0ms)
+  Rendered queries/_query_form.html.erb (38.3ms)
+  Rendered issues/_sidebar.html.erb (49.3ms)
+  Rendered issues/index.html.erb within layouts/base (113.2ms)
+Completed 200 OK in 277ms (Views: 84.9ms | ActiveRecord: 60.6ms)
+Started GET "/time_entries" for 127.0.0.1 at 2019-02-15 20:12:53 +0200
+Processing by TimelogController#index as HTML
+  Current user: anonymous
+  Rendering timelog/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (5.8ms)
+  Rendered queries/_columns.html.erb (3.2ms)
+  Rendered queries/_query_form.html.erb (14.1ms)
+  Rendered timelog/_date_range.html.erb (27.8ms)
+  Rendered timelog/index.html.erb within layouts/base (47.5ms)
+Completed 200 OK in 147ms (Views: 58.9ms | ActiveRecord: 10.9ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-15 20:13:15 +0200
+Processing by AdminController#plugins as HTML
+  Current user: anonymous
+Redirected to http://localhost:3000/login?back_url=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fplugins
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/login?back_url=http%3A%2F%2Flocalhost%3A3000%2Fadmin%2Fplugins" for 127.0.0.1 at 2019-02-15 20:13:15 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"back_url"=>"http://localhost:3000/admin/plugins"}
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (6.2ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.2ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:13:26 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d83qE8nCQpjepcnCMjhVge0Mv6uOqUEFiSemh1n26Q82UYMyapP6NRR7zbIjUAIAXLiBvyRJY+Li2ZdPZwuA5Q==", "back_url"=>"http://localhost:3000/admin/plugins", "username"=>"Radoslav Marinov", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'Radoslav Marinov' from 127.0.0.1 at 2019-02-15 18:13:26 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.7ms)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 2.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:16:35 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ggLWVRGoAfLfUIXlsvemNrMopgnFHzcb89QAQQjUiUDDnr90svm5XxWOgZWjn/G3ApyYHW//FfyYKjGJNingqg==", "back_url"=>"http://localhost:3000/admin/plugins", "username"=>"root", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'root' from 127.0.0.1 at 2019-02-15 18:16:35 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (1.0ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:16:37 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bjPzqNArd4KaH+lh6WU+j52yynnxzZQjW6X2exhX0HAvr5qJc3rPL1DB7RH4DWkOLAb0bVsttsQwW8ezJqq5mg==", "back_url"=>"http://localhost:3000/admin/plugins", "username"=>"root", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'root' from 127.0.0.1 at 2019-02-15 18:16:37 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.7ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:16:45 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YwdM1y6g1eNNWtTUAMoU8XV6WDeOGAodB9uETNCtLJsimyX2jfFtToeE0KQRokNwxM5mIyT4KPpsJbWE7lBFcQ==", "back_url"=>"http://localhost:3000/admin/plugins", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admin' from 127.0.0.1 at 2019-02-15 18:16:45 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.8ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:16:49 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ufy0MCq2ytr956hXsigKKzZyaYwZhDH6k+Fccl1l6o74YN0Riedydzc5rCejQF2qh8ZXmLNkEx34H226Y5iDZA==", "back_url"=>"http://localhost:3000/admin/plugins", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Successful authentication for 'admin' from 127.0.0.1 at 2019-02-15 18:16:49 UTC
+Redirected to http://localhost:3000/admin/plugins
+Completed 302 Found in 66ms (ActiveRecord: 46.4ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-15 20:16:49 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 13.3ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:16:49 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (3.7ms)
+Completed 200 OK in 50ms (Views: 19.7ms | ActiveRecord: 25.5ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/" for 127.0.0.1 at 2019-02-15 20:17:26 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 114ms (ActiveRecord: 21.1ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:27 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (8.2ms)
+Completed 200 OK in 57ms (Views: 39.9ms | ActiveRecord: 11.7ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 20:17:35 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 53.6ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:35 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (1.1ms)
+Completed 200 OK in 20ms (Views: 8.8ms | ActiveRecord: 8.2ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 20:17:41 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 54.6ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:41 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (0.9ms)
+Completed 200 OK in 30ms (Views: 15.8ms | ActiveRecord: 11.2ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 20:17:42 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 25.8ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:42 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (0.9ms)
+Completed 200 OK in 22ms (Views: 9.4ms | ActiveRecord: 8.0ms)
+Started GET "/my/page" for 127.0.0.1 at 2019-02-15 20:17:45 +0200
+Processing by MyController#page as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 64ms (ActiveRecord: 56.7ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:45 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (0.9ms)
+Completed 200 OK in 24ms (Views: 9.8ms | ActiveRecord: 9.5ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-15 20:17:47 +0200
+Processing by ProjectsController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 25.3ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:47 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (1.1ms)
+Completed 200 OK in 21ms (Views: 11.6ms | ActiveRecord: 6.8ms)
+Started GET "/admin" for 127.0.0.1 at 2019-02-15 20:17:48 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 47ms (ActiveRecord: 41.8ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:17:48 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (1.3ms)
+Completed 200 OK in 28ms (Views: 15.1ms | ActiveRecord: 8.7ms)
+Started GET "/time_entries" for 127.0.0.1 at 2019-02-15 20:18:09 +0200
+Processing by TimelogController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://localhost:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 62ms (ActiveRecord: 57.3ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:18:09 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (1.2ms)
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 9.0ms)
+Started GET "/" for 127.0.0.1 at 2019-02-15 20:19:55 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (8.7ms)
+Completed 200 OK in 224ms (Views: 19.8ms | ActiveRecord: 50.0ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-15 20:21:02 +0200
+Processing by AdminController#plugins as HTML
+  Current user: anonymous
+Redirected to http://0.0.0.0:3000/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2Fplugins
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+Started GET "/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2Fplugins" for 127.0.0.1 at 2019-02-15 20:21:02 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"back_url"=>"http://0.0.0.0:3000/admin/plugins"}
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (5.1ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:22:44 +0200
+Processing by MyController#password as HTML
+  Current user: anonymous
+Redirected to http://localhost:3000/login?back_url=http%3A%2F%2Flocalhost%3A3000%2Fmy%2Fpassword
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+Started GET "/login?back_url=http%3A%2F%2Flocalhost%3A3000%2Fmy%2Fpassword" for 127.0.0.1 at 2019-02-15 20:22:44 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"back_url"=>"http://localhost:3000/my/password"}
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (1.4ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-15 20:22:58 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RwmKz6aXJJ5mmLETCtyKfXJi355+9xjoNz2I9/JdQBZJjA8j/Ox/SdVLAAfN6wZtdly88frWgjvt7RJLz3Xb+w==", "back_url"=>"http://0.0.0.0:3000/admin/plugins", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Successful authentication for 'admin' from 127.0.0.1 at 2019-02-15 18:22:58 UTC
+Redirected to http://0.0.0.0:3000/admin/plugins
+Completed 302 Found in 69ms (ActiveRecord: 31.8ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-15 20:22:58 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 9.5ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-15 20:22:58 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (2.5ms)
+Completed 200 OK in 25ms (Views: 13.3ms | ActiveRecord: 8.6ms)
+Started POST "/my/password" for 127.0.0.1 at 2019-02-15 20:23:31 +0200
+Processing by MyController#password as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p2LvwXnNk48UGlL3Iep+pC7nEVkGfQdKdGKTicN5gUHsugqwk5PYDtdtnCEypewVtXD5JsFKYTIF0Y7iqXir8Q==", "password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]", "commit"=>"Apply"}
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/_sidebar.html.erb (12.8ms)
+  Rendered my/password.html.erb within layouts/base (21.8ms)
+Completed 200 OK in 71ms (Views: 29.6ms | ActiveRecord: 15.3ms)
+Started POST "/my/password" for 127.0.0.1 at 2019-02-15 20:23:48 +0200
+Processing by MyController#password as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"liIWi2Y5Yi2ygs53rHinKuzd5C7RxV7bXvIWIpbfW2Ld+vP6jGcprHH1AKG/NzWbd0oMURbyOKMvQQtJ/N5x0g==", "password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]", "commit"=>"Apply"}
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/my/account
+Completed 302 Found in 103ms (ActiveRecord: 83.7ms)
+Started GET "/my/account" for 127.0.0.1 at 2019-02-15 20:23:48 +0200
+Processing by MyController#account as HTML
+  Current user: admin (id=1)
+  Rendering my/account.html.erb within layouts/base
+  Rendered users/_mail_notifications.html.erb (6.6ms)
+  Rendered users/_preferences.html.erb (494.4ms)
+  Rendered my/_sidebar.html.erb (3.4ms)
+  Rendered my/account.html.erb within layouts/base (2175.1ms)
+Completed 200 OK in 2196ms (Views: 2178.2ms | ActiveRecord: 12.0ms)
+Started GET "/admin/" for 127.0.0.1 at 2019-02-15 20:24:39 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/_menu.html.erb (6.4ms)
+  Rendered admin/index.html.erb within layouts/admin (8.3ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (8.0ms)
+Completed 200 OK in 37ms (Views: 18.8ms | ActiveRecord: 13.0ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-15 20:24:45 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (2.3ms)
+  Rendered admin/_menu.html.erb (3.2ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (9.3ms)
+Completed 200 OK in 43ms (Views: 15.8ms | ActiveRecord: 19.4ms)
+Started GET "/my/page" for 127.0.0.1 at 2019-02-15 20:52:19 +0200
+Processing by MyController#page as HTML
+  Current user: admin (id=1)
+  Rendering my/page.html.erb within layouts/base
+  Rendered queries/_columns.html.erb (8.9ms)
+  Rendered my/blocks/_issues.erb (41.8ms)
+  Rendered queries/_columns.html.erb (3.5ms)
+  Rendered my/blocks/_issues.erb (9.1ms)
+  Rendered my/page.html.erb within layouts/base (236.7ms)
+Completed 200 OK in 294ms (Views: 176.4ms | ActiveRecord: 99.0ms)
+Started GET "/admin" for 127.0.0.1 at 2019-02-15 20:52:23 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/_menu.html.erb (5.5ms)
+  Rendered admin/index.html.erb within layouts/admin (5.9ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (11.8ms)
+Completed 200 OK in 54ms (Views: 18.4ms | ActiveRecord: 30.0ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/" for 127.0.0.1 at 2019-02-16 16:27:04 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (5.8ms)
+Completed 200 OK in 176ms (Views: 21.3ms | ActiveRecord: 21.5ms)
+Started GET "/admin/" for 127.0.0.1 at 2019-02-16 16:27:27 +0200
+Processing by AdminController#index as HTML
+  Current user: anonymous
+Redirected to http://0.0.0.0:3000/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2F
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+Started GET "/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2F" for 127.0.0.1 at 2019-02-16 16:27:27 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"back_url"=>"http://0.0.0.0:3000/admin/"}
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (3.0ms)
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-16 16:27:32 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aWgfnlUBCJK1F/u/uejyCc2zCj/pA6zlZkFsJP6ICsRYa8V3sHEJ9bROHf3TnxBmB4TgGLe6S+qruBbkIYB6ew==", "back_url"=>"http://0.0.0.0:3000/admin/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admin' from 127.0.0.1 at 2019-02-16 14:27:32 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.7ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-16 16:27:38 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29VM8X2nMoTOp8/OoCuK3fhajRWTF/kRaxSsXE7iN2Pq1pYYmNcz48/+KYzKXGiyMm1nMs2uHh6m7dackepH3A==", "back_url"=>"http://0.0.0.0:3000/admin/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admin' from 127.0.0.1 at 2019-02-16 14:27:38 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.4ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-16 16:27:45 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WRZpJ4NG964hjbwklz9jtS8MCjJ3yX96/SplxOMGvX5oFbPOZjb2ySDUWmb9SIHa5TvgFSlwmHUw0x8EPA7NwQ==", "back_url"=>"http://0.0.0.0:3000/admin/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Successful authentication for 'admin' from 127.0.0.1 at 2019-02-16 14:27:45 UTC
+Redirected to http://0.0.0.0:3000/admin/
+Completed 302 Found in 25ms (ActiveRecord: 12.7ms)
+Started GET "/admin/" for 127.0.0.1 at 2019-02-16 16:27:45 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/_menu.html.erb (26.1ms)
+  Rendered admin/index.html.erb within layouts/admin (28.1ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (8.3ms)
+Completed 200 OK in 50ms (Views: 37.0ms | ActiveRecord: 7.6ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-16 16:27:50 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.1ms)
+  Rendered admin/_menu.html.erb (1.5ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (4.7ms)
+Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 5.7ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/" for 127.0.0.1 at 2019-02-17 16:01:39 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (7.3ms)
+Completed 200 OK in 205ms (Views: 25.1ms | ActiveRecord: 20.8ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:01:42 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (2.9ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 1.9ms)
+Started GET "/activity" for 127.0.0.1 at 2019-02-17 16:05:52 +0200
+Processing by ActivitiesController#index as HTML
+  Current user: anonymous
+  Rendering activities/index.html.erb within layouts/base
+  Rendered activities/_activities.html.erb (0.8ms)
+  Rendered activities/index.html.erb within layouts/base (10.4ms)
+Completed 200 OK in 49ms (Views: 15.0ms | ActiveRecord: 15.3ms)
+Started GET "/issues" for 127.0.0.1 at 2019-02-17 16:05:58 +0200
+Processing by IssuesController#index as HTML
+  Current user: anonymous
+  Rendering issues/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (10.7ms)
+  Rendered queries/_columns.html.erb (2.5ms)
+  Rendered queries/_query_form.html.erb (19.5ms)
+  Rendered issues/_sidebar.html.erb (3.5ms)
+  Rendered issues/index.html.erb within layouts/base (35.3ms)
+Completed 200 OK in 128ms (Views: 39.9ms | ActiveRecord: 12.7ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:05:59 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (1.7ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 1.4ms)
+Started GET "/projects?utf8=%E2%9C%93&closed=1" for 127.0.0.1 at 2019-02-17 16:06:01 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"utf8"=>"✓", "closed"=>"1"}
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (1.7ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 1.2ms)
+Started GET "/projects?utf8=%E2%9C%93" for 127.0.0.1 at 2019-02-17 16:06:03 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"utf8"=>"✓"}
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (1.8ms)
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 1.6ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:06:51 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (1.5ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 1.2ms)
+Started GET "/activity" for 127.0.0.1 at 2019-02-17 16:07:01 +0200
+Processing by ActivitiesController#index as HTML
+  Current user: anonymous
+  Rendering activities/index.html.erb within layouts/base
+  Rendered activities/_activities.html.erb (0.0ms)
+  Rendered activities/index.html.erb within layouts/base (3.4ms)
+Completed 200 OK in 21ms (Views: 8.0ms | ActiveRecord: 2.6ms)
+Started GET "/issues" for 127.0.0.1 at 2019-02-17 16:07:03 +0200
+Processing by IssuesController#index as HTML
+  Current user: anonymous
+  Rendering issues/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (4.6ms)
+  Rendered queries/_columns.html.erb (1.2ms)
+  Rendered queries/_query_form.html.erb (8.8ms)
+  Rendered issues/_sidebar.html.erb (2.0ms)
+  Rendered issues/index.html.erb within layouts/base (13.6ms)
+Completed 200 OK in 36ms (Views: 17.6ms | ActiveRecord: 3.2ms)
+Started GET "/time_entries" for 127.0.0.1 at 2019-02-17 16:07:04 +0200
+Processing by TimelogController#index as HTML
+  Current user: anonymous
+  Rendering timelog/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (2.5ms)
+  Rendered queries/_columns.html.erb (0.8ms)
+  Rendered queries/_query_form.html.erb (4.4ms)
+  Rendered timelog/_date_range.html.erb (7.3ms)
+  Rendered timelog/index.html.erb within layouts/base (13.5ms)
+Completed 200 OK in 58ms (Views: 19.0ms | ActiveRecord: 5.6ms)
+Started GET "/issues/gantt" for 127.0.0.1 at 2019-02-17 16:07:05 +0200
+Processing by GanttsController#show as HTML
+  Current user: anonymous
+  Rendering gantts/show.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (4.9ms)
+  Rendered issues/_sidebar.html.erb (19.8ms)
+  Rendered gantts/show.html.erb within layouts/base (51.1ms)
+Completed 200 OK in 71ms (Views: 53.5ms | ActiveRecord: 5.9ms)
+Started GET "/issues/calendar" for 127.0.0.1 at 2019-02-17 16:07:06 +0200
+Processing by CalendarsController#show as HTML
+  Current user: anonymous
+  Rendering calendars/show.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (4.3ms)
+  Rendered common/_calendar.html.erb (2.3ms)
+  Rendered issues/_sidebar.html.erb (2.4ms)
+  Rendered calendars/show.html.erb within layouts/base (13.8ms)
+Completed 200 OK in 39ms (Views: 17.8ms | ActiveRecord: 4.9ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:07:08 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (2.1ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 1.6ms)
+Started GET "/login" for 127.0.0.1 at 2019-02-17 16:07:14 +0200
+Processing by AccountController#login as HTML
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (3.6ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.7ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-17 16:07:22 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1OQvEyxc8vbian3CtKWR2umK+mR87RrKIkkVpQLiePf3y/SFItn8zOU/EXReiGePVM7r2JWW96LQyItF85bGlA==", "back_url"=>"http://0.0.0.0:3000/projects", "username"=>"admnin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admnin' from 127.0.0.1 at 2019-02-17 14:07:22 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.5ms)
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 2.1ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-17 16:07:28 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Om1xPzbwsUgxT/ZyvQlweX01vwQbFHw6khh6pzzLwakZQqqpOHW/cjYamsRXJIYswHGuuPJvkVJgmeRHzb9/yg==", "back_url"=>"http://0.0.0.0:3000/projects", "username"=>"admnin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admnin' from 127.0.0.1 at 2019-02-17 14:07:28 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-17 16:07:42 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"226mnFsBTPu8XfN7H2zRHB0ZasOz0dtcRgjNcMXxnnb4QX0KVYRCwbsIn831QSdJoF17f1qqNjS0iVOQNIUgFQ==", "back_url"=>"http://0.0.0.0:3000/projects", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Successful authentication for 'admin' from 127.0.0.1 at 2019-02-17 14:07:42 UTC
+Redirected to http://0.0.0.0:3000/projects
+Completed 302 Found in 68ms (ActiveRecord: 56.1ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:07:42 +0200
+Processing by ProjectsController#index as HTML
+  Current user: admin (id=1)
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (2.0ms)
+Completed 200 OK in 22ms (Views: 8.3ms | ActiveRecord: 9.5ms)
+Started GET "/projects/new" for 127.0.0.1 at 2019-02-17 16:07:59 +0200
+Processing by ProjectsController#new as HTML
+  Current user: admin (id=1)
+  Rendering projects/new.html.erb within layouts/base
+  Rendered projects/_form.html.erb (8.5ms)
+  Rendered projects/new.html.erb within layouts/base (10.9ms)
+Completed 200 OK in 56ms (Views: 16.5ms | ActiveRecord: 10.2ms)
+Started POST "/projects" for 127.0.0.1 at 2019-02-17 16:43:47 +0200
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G6jgt7N1elaTwE8x1EN7OFFVhQ5+n4BB6jZ9RwA+n+qGWFijgNhZHhMrhfmubYej50mQKhLIs8SsZfte/U6MIQ==", "project"=>{"name"=>"WarehouseProject", "description"=>"This is the description of the Warehouse project", "identifier"=>"warehouseproject", "homepage"=>"/warehouse", "is_public"=>"1", "inherit_members"=>"0", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", ""]}, "commit"=>"Create"}
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/projects/warehouseproject/settings
+Completed 302 Found in 64ms (ActiveRecord: 26.7ms)
+Started GET "/projects/warehouseproject/settings" for 127.0.0.1 at 2019-02-17 16:43:47 +0200
+Processing by ProjectsController#settings as HTML
+  Parameters: {"id"=>"warehouseproject"}
+  Current user: admin (id=1)
+  Rendering projects/settings.html.erb within layouts/base
+  Rendered projects/_form.html.erb (4.5ms)
+  Rendered projects/_edit.html.erb (5.4ms)
+  Rendered projects/settings/_members.html.erb (6.4ms)
+  Rendered projects/settings/_issues.html.erb (7.8ms)
+  Rendered projects/settings/_versions.html.erb (23.7ms)
+  Rendered projects/settings/_issue_categories.html.erb (3.6ms)
+  Rendered projects/settings/_repositories.html.erb (3.7ms)
+  Rendered projects/settings/_boards.html.erb (4.0ms)
+  Rendered projects/settings/_activities.html.erb (6.2ms)
+  Rendered common/_tabs.html.erb (73.5ms)
+  Rendered projects/settings.html.erb within layouts/base (77.2ms)
+Completed 200 OK in 113ms (Views: 82.6ms | ActiveRecord: 15.3ms)
+Started GET "/projects/warehouseproject" for 127.0.0.1 at 2019-02-17 16:43:55 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouseproject"}
+  Current user: admin (id=1)
+  Rendering projects/show.html.erb within layouts/base
+  Rendered projects/_members_box.html.erb (0.4ms)
+  Rendered projects/show.html.erb within layouts/base (8.8ms)
+Completed 200 OK in 46ms (Views: 21.0ms | ActiveRecord: 12.8ms)
+Started GET "/" for 127.0.0.1 at 2019-02-17 16:44:04 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (1.1ms)
+Completed 200 OK in 62ms (Views: 6.6ms | ActiveRecord: 52.4ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-17 16:44:06 +0200
+Processing by ProjectsController#index as HTML
+  Current user: admin (id=1)
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (4.5ms)
+Completed 200 OK in 22ms (Views: 10.3ms | ActiveRecord: 7.8ms)
+Started GET "/projects/warehouseproject" for 127.0.0.1 at 2019-02-17 16:45:26 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouseproject"}
+  Current user: admin (id=1)
+  Rendering projects/show.html.erb within layouts/base
+  Rendered projects/_members_box.html.erb (0.0ms)
+  Rendered projects/show.html.erb within layouts/base (3.8ms)
+Completed 200 OK in 51ms (Views: 15.3ms | ActiveRecord: 26.4ms)
+Migrating to CreateWarehouses (1)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Migrating to ChangeSqliteBooleansDefault (20180923091603)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Migrating to Setup (1)
+Migrating to IssueMove (2)
+Migrating to IssueAddNote (3)
+Migrating to ExportPdf (4)
+Migrating to IssueStartDate (5)
+Migrating to CalendarAndActivity (6)
+Migrating to CreateJournals (7)
+Migrating to CreateUserPreferences (8)
+Migrating to AddHideMailPref (9)
+Migrating to CreateComments (10)
+Migrating to AddNewsCommentsCount (11)
+Migrating to AddCommentsPermissions (12)
+Migrating to CreateQueries (13)
+Migrating to AddQueriesPermissions (14)
+Migrating to CreateRepositories (15)
+Migrating to AddRepositoriesPermissions (16)
+Migrating to CreateSettings (17)
+Migrating to SetDocAndFilesNotifications (18)
+Migrating to AddIssueStatusPosition (19)
+Migrating to AddRolePosition (20)
+Migrating to AddTrackerPosition (21)
+Migrating to SerializePossiblesValues (22)
+Migrating to AddTrackerIsInRoadmap (23)
+Migrating to AddRoadmapPermission (24)
+Migrating to AddSearchPermission (25)
+Migrating to AddRepositoryLoginAndPassword (26)
+Migrating to CreateWikis (27)
+Migrating to CreateWikiPages (28)
+Migrating to CreateWikiContents (29)
+Migrating to AddProjectsFeedsPermissions (30)
+Migrating to AddRepositoryRootUrl (31)
+Migrating to CreateTimeEntries (32)
+Migrating to AddTimelogPermissions (33)
+Migrating to CreateChangesets (34)
+Migrating to CreateChanges (35)
+Migrating to AddChangesetCommitDate (36)
+Migrating to AddProjectIdentifier (37)
+Migrating to AddCustomFieldIsFilter (38)
+Migrating to CreateWatchers (39)
+Migrating to CreateChangesetsIssues (40)
+Migrating to RenameCommentToComments (41)
+Migrating to CreateIssueRelations (42)
+Migrating to AddRelationsPermissions (43)
+Migrating to SetLanguageLengthToFive (44)
+Migrating to CreateBoards (45)
+Migrating to CreateMessages (46)
+Migrating to AddBoardsPermissions (47)
+Migrating to AllowNullVersionEffectiveDate (48)
+Migrating to AddWikiDestroyPagePermission (49)
+Migrating to AddWikiAttachmentsPermissions (50)
+Migrating to AddProjectStatus (51)
+Migrating to AddChangesRevision (52)
+Migrating to AddChangesBranch (53)
+Migrating to AddChangesetsScmid (54)
+Migrating to AddRepositoriesType (55)
+Migrating to AddRepositoriesChangesPermission (56)
+Migrating to AddVersionsWikiPageTitle (57)
+Migrating to AddIssueCategoriesAssignedToId (58)
+Migrating to AddRolesAssignable (59)
+Migrating to ChangeChangesetsCommitterLimit (60)
+Migrating to AddRolesBuiltin (61)
+Migrating to InsertBuiltinRoles (62)
+Migrating to AddRolesPermissions (63)
+Migrating to DropPermissions (64)
+Migrating to AddSettingsUpdatedOn (65)
+Migrating to AddCustomValueCustomizedIndex (66)
+Migrating to CreateWikiRedirects (67)
+Migrating to CreateEnabledModules (68)
+Migrating to AddIssuesEstimatedHours (69)
+Migrating to ChangeAttachmentsContentTypeLimit (70)
+Migrating to AddQueriesColumnNames (71)
+Migrating to AddEnumerationsPosition (72)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Migrating to AddEnumerationsIsDefault (73)
+Migrating to AddAuthSourcesTls (74)
+Migrating to AddMembersMailNotification (75)
+Migrating to AllowNullPosition (76)
+Migrating to RemoveIssueStatusesHtmlColor (77)
+Migrating to AddCustomFieldsPosition (78)
+Migrating to AddUserPreferencesTimeZone (79)
+Migrating to AddUsersType (80)
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Migrating to CreateProjectsTrackers (81)
+Migrating to AddMessagesLocked (82)
+Migrating to AddMessagesSticky (83)
+Migrating to ChangeAuthSourcesAccountLimit (84)
+Migrating to AddRoleTrackerOldStatusIndexToWorkflows (85)
+Migrating to AddCustomFieldsSearchable (86)
+Migrating to ChangeProjectsDescriptionToText (87)
+Migrating to AddCustomFieldsDefaultValue (88)
+Migrating to AddAttachmentsDescription (89)
+Migrating to ChangeVersionsNameLimit (90)
+Migrating to ChangeChangesetsRevisionToString (91)
+Migrating to ChangeChangesFromRevisionToString (92)
+Migrating to AddWikiPagesProtected (93)
+Migrating to ChangeProjectsHomepageLimit (94)
+Migrating to AddWikiPagesParentId (95)
+Migrating to AddCommitAccessPermission (96)
+Migrating to AddViewWikiEditsPermission (97)
+Migrating to SetTopicAuthorsAsWatchers (98)
+Migrating to AddDeleteWikiPagesAttachmentsPermission (99)
+Migrating to AddChangesetsUserId (100)
+Migrating to PopulateChangesetsUserId (101)
+Migrating to AddCustomFieldsEditable (102)
+Migrating to SetCustomFieldsEditable (103)
+Migrating to AddProjectsLftAndRgt (104)
+Migrating to BuildProjectsTree (105)
+Migrating to RemoveProjectsProjectsCount (106)
+Migrating to AddOpenIdAuthenticationTables (107)
+Migrating to AddIdentityUrlToUsers (108)
+Migrating to AddWatchersUserIdTypeIndex (20090214190337)
+Migrating to AddQueriesSortCriteria (20090312172426)
+Migrating to AddProjectsTrackersUniqueIndex (20090312194159)
+Migrating to ExtendSettingsName (20090318181151)
+Migrating to AddTypeToEnumerations (20090323224724)
+Migrating to UpdateEnumerationsToSti (20090401221305)
+Migrating to AddActiveFieldToEnumerations (20090401231134)
+Migrating to AddProjectToEnumerations (20090403001910)
+Migrating to AddParentIdToEnumerations (20090406161854)
+Migrating to AddQueriesGroupBy (20090425161243)
+Migrating to CreateMemberRoles (20090503121501)
+Migrating to PopulateMemberRoles (20090503121505)
+Migrating to DropMembersRoleId (20090503121510)
+Migrating to FixMessagesStickyNull (20090614091200)
+Migrating to PopulateUsersType (20090704172350)
+Migrating to CreateGroupsUsers (20090704172355)
+Migrating to AddMemberRolesInheritedFrom (20090704172358)
+Migrating to FixUsersCustomValues (20091010093521)
+Migrating to AddMissingIndexesToWorkflows (20091017212227)
+Migrating to AddMissingIndexesToCustomFieldsProjects (20091017212457)
+Migrating to AddMissingIndexesToMessages (20091017212644)
+Migrating to AddMissingIndexesToRepositories (20091017212938)
+Migrating to AddMissingIndexesToComments (20091017213027)
+Migrating to AddMissingIndexesToEnumerations (20091017213113)
+Migrating to AddMissingIndexesToWikiPages (20091017213151)
+Migrating to AddMissingIndexesToWatchers (20091017213228)
+Migrating to AddMissingIndexesToAuthSources (20091017213257)
+Migrating to AddMissingIndexesToDocuments (20091017213332)
+Migrating to AddMissingIndexesToTokens (20091017213444)
+Migrating to AddMissingIndexesToChangesets (20091017213536)
+Migrating to AddMissingIndexesToIssueCategories (20091017213642)
+Migrating to AddMissingIndexesToMemberRoles (20091017213716)
+Migrating to AddMissingIndexesToBoards (20091017213757)
+Migrating to AddMissingIndexesToUserPreferences (20091017213835)
+Migrating to AddMissingIndexesToIssues (20091017213910)
+Migrating to AddMissingIndexesToMembers (20091017214015)
+Migrating to AddMissingIndexesToCustomFields (20091017214107)
+Migrating to AddMissingIndexesToQueries (20091017214136)
+Migrating to AddMissingIndexesToTimeEntries (20091017214236)
+Migrating to AddMissingIndexesToNews (20091017214308)
+Migrating to AddMissingIndexesToUsers (20091017214336)
+Migrating to AddMissingIndexesToAttachments (20091017214406)
+Migrating to AddMissingIndexesToWikiContents (20091017214440)
+Migrating to AddMissingIndexesToCustomValues (20091017214519)
+Migrating to AddMissingIndexesToJournals (20091017214611)
+Migrating to AddMissingIndexesToIssueRelations (20091017214644)
+Migrating to AddMissingIndexesToWikiRedirects (20091017214720)
+Migrating to AddMissingIndexesToCustomFieldsTrackers (20091017214750)
+Migrating to AddActivityIndexes (20091025163651)
+Migrating to AddVersionsStatus (20091108092559)
+Migrating to AddViewIssuesPermission (20091114105931)
+Migrating to AddDefaultDoneRatioToIssueStatus (20091123212029)
+Migrating to AddVersionsSharing (20091205124427)
+Migrating to AddLftAndRgtIndexesToProjects (20091220183509)
+Migrating to AddIndexToSettingsName (20091220183727)
+Migrating to AddIndexesToIssueStatus (20091220184736)
+Migrating to RemoveEnumerationsOpt (20091225164732)
+Migrating to ChangeWikiContentsTextLimit (20091227112908)
+Migrating to ChangeUsersMailNotificationToString (20100129193402)
+Migrating to UpdateMailNotificationValues (20100129193813)
+Migrating to AddIndexOnChangesetsScmid (20100221100219)
+Migrating to AddIssuesNestedSetsColumns (20100313132032)
+Migrating to AddIndexOnIssuesNestedSet (20100313171051)
+Migrating to ChangeChangesPathLengthLimit (20100705164950)
+Migrating to EnableCalendarAndGanttModulesWhereAppropriate (20100819172912)
+Migrating to AddUniqueIndexOnMembers (20101104182107)
+Migrating to AddCustomFieldsVisible (20101107130441)
+Migrating to ChangeProjectsNameLimit (20101114115114)
+Migrating to ChangeProjectsIdentifierLimit (20101114115359)
+Migrating to AddWorkflowsAssigneeAndAuthor (20110220160626)
+Migrating to AddUsersSalt (20110223180944)
+Migrating to SaltUserPasswords (20110223180953)
+Migrating to AddRepositoriesPathEncoding (20110224000000)
+Migrating to ChangeRepositoriesPasswordLimit (20110226120112)
+Migrating to ChangeAuthSourcesAccountPasswordLimit (20110226120132)
+Migrating to ChangeJournalDetailsValuesToText (20110227125750)
+Migrating to AddRepositoriesLogEncoding (20110228000000)
+Migrating to CopyRepositoriesLogEncoding (20110228000100)
+Migrating to AddIndexToUsersType (20110401192910)
+Migrating to AddRolesIssuesVisibility (20110408103312)
+Migrating to AddIssuesIsPrivate (20110412065600)
+Migrating to AddRepositoriesExtraInfo (20110511000000)
+Migrating to CreateChangesetParents (20110902000000)
+Migrating to AddUniqueIndexToIssueRelations (20111201201315)
+Migrating to AddRepositoriesIdentifier (20120115143024)
+Migrating to AddRepositoriesIsDefault (20120115143100)
+Migrating to SetDefaultRepositories (20120115143126)
+Migrating to AddCustomFieldsMultiple (20120127174243)
+Migrating to ChangeUsersLoginLimit (20120205111326)
+Migrating to ChangeAttachmentsContainerDefaults (20120223110929)
+Migrating to AddAuthSourcesFilter (20120301153455)
+Migrating to ChangeRepositoriesToFullSti (20120422150750)
+Migrating to AddTrackersFieldsBits (20120705074331)
+Migrating to AddAuthSourcesTimeout (20120707064544)
+Migrating to AddWorkflowsType (20120714122000)
+Migrating to UpdateWorkflowsToSti (20120714122100)
+Migrating to AddWorkflowsRuleFields (20120714122200)
+Migrating to AddBoardsParentId (20120731164049)
+Migrating to AddJournalsPrivateNotes (20120930112914)
+Migrating to AddEnumerationsPositionName (20121026002032)
+Migrating to PopulateEnumerationsPositionName (20121026003537)
+Migrating to AddQueriesType (20121209123234)
+Migrating to UpdateQueriesToSti (20121209123358)
+Migrating to AddAttachmentsDiskDirectory (20121213084931)
+Migrating to SplitDocumentsPermissions (20130110122628)
+Migrating to AddUniqueIndexOnTokensValue (20130201184705)
+Migrating to AddProjectsInheritMembers (20130202090625)
+Migrating to AddUniqueIndexOnCustomFieldsTrackers (20130207175206)
+Migrating to AddUniqueIndexOnCustomFieldsProjects (20130207181455)
+Migrating to ChangeUsersLastnameLengthTo255 (20130215073721)
+Migrating to AddIssuesClosedOn (20130215111127)
+Migrating to PopulateIssuesClosedOn (20130215111141)
+Migrating to RemoveIssuesDefaultFkValues (20130217094251)
+Migrating to CreateQueriesRoles (20130602092539)
+Migrating to AddQueriesVisibility (20130710182539)
+Migrating to CreateCustomFieldsRoles (20130713104233)
+Migrating to AddQueriesOptions (20130713111657)
+Migrating to AddUsersMustChangePasswd (20130729070143)
+Migrating to RemoveEolsFromAttachmentsFilename (20130911193200)
+Migrating to SupportForMultipleCommitKeywords (20131004113137)
+Migrating to AddRepositoriesCreatedOn (20131005100610)
+Migrating to AddCustomFieldsFormatStore (20131124175346)
+Migrating to AddCustomFieldsDescription (20131210180802)
+Migrating to RemoveCustomFieldsMinMaxLengthDefaultValues (20131214094309)
+Migrating to StoreRelationTypeInJournalDetails (20131215104612)
+Migrating to DeleteOrphanTimeEntriesCustomValues (20131218183023)
+Migrating to ChangeChangesetsCommentsLimit (20140228130325)
+Migrating to AddPasswordChangedAtToUser (20140903143914)
+Migrating to InsertBuiltinGroups (20140920094058)
+Migrating to AddTrackersDefaultStatusId (20141029181752)
+Migrating to RemoveIssueStatusesIsDefault (20141029181824)
+Migrating to AddRolesUsersVisibility (20141109112308)
+Migrating to AddWikiRedirectsRedirectsToWikiId (20141122124142)
+Migrating to CreateEmailAddresses (20150113194759)
+Migrating to PopulateEmailAddresses (20150113211532)
+Migrating to RemoveUsersMail (20150113213922)
+Migrating to AddEmailAddressesUserIdIndex (20150113213955)
+Migrating to ReplaceMoveIssuesPermission (20150208105930)
+Migrating to ChangeDocumentsTitleLimit (20150510083747)
+Migrating to ClearEstimatedHoursOnParentIssues (20150525103953)
+Migrating to AddRolesTimeEntriesVisibility (20150526183158)
+Migrating to AddRolesAllRolesManaged (20150528084820)
+Migrating to CreateRolesManagedRoles (20150528092912)
+Migrating to AddUniqueIndexOnRolesManagedRoles (20150528093249)
+Migrating to InsertAllowedStatusesForNewIssues (20150725112753)
+Migrating to CreateImports (20150730122707)
+Migrating to CreateImportItems (20150730122735)
+Migrating to ChangeTimeEntriesCommentsLimitTo1024 (20150921204850)
+Migrating to ChangeWikiContentsCommentsLimitTo1024 (20150921210243)
+Migrating to ChangeAttachmentsFilesizeLimitTo8 (20151020182334)
+Migrating to FixCommaInUserFormatSettingValue (20151020182731)
+Migrating to ChangeIssueCategoriesNameLimitTo60 (20151021184614)
+Migrating to ChangeAuthSourcesFilterToText (20151021185456)
+Migrating to ChangeUserPreferencesHideMailDefaultToTrue (20151021190616)
+Migrating to AddTokensUpdatedOn (20151024082034)
+Migrating to CreateCustomFieldEnumerations (20151025072118)
+Migrating to AddProjectsDefaultVersionId (20151031095005)
+Migrating to ForcePasswordResetDuringSetup (20160404080304)
+Migrating to RemovePositionDefaults (20160416072926)
+Migrating to AddRolesSettings (20160529063352)
+Migrating to AddTrackerIdIndexToWorkflows (20161001122012)
+Migrating to AddIndexOnMemberRolesInheritedFrom (20161002133421)
+Migrating to ChangeIssuesDescriptionLimit (20161010081301)
+Migrating to ChangeJournalDetailsValueLimit (20161010081528)
+Migrating to ChangeJournalsNotesLimit (20161010081600)
+Migrating to AddIndexOnChangesetsIssuesIssueId (20161126094932)
+Migrating to AddIndexOnIssuesParentId (20161220091118)
+Migrating to AddIndexOnDiskFilenameToAttachments (20170207050700)
+Migrating to ChangeAttachmentsDigestLimitTo64 (20170302015225)
+Migrating to AddProjectDefaultAssignedToId (20170309214320)
+Migrating to ChangeRepositoriesExtraInfoLimit (20170320051650)
+Migrating to AddViewNewsToAllExistingRoles (20170418090031)
+Migrating to AddViewMessagesToAllExistingRoles (20170419144536)
+Migrating to RenameCommentsToContent (20170723112801)
+Migrating to AddVerifyPeerToAuthSources (20180913072918)
+Migrating to ChangeSqliteBooleansTo0And1 (20180923082945)
+Migrating to ChangeSqliteBooleansDefault (20180923091603)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Migrating to CreateWarehouses (1)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/" for 127.0.0.1 at 2019-02-18 17:14:26 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (7.0ms)
+Completed 200 OK in 249ms (Views: 34.2ms | ActiveRecord: 17.5ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-18 17:14:30 +0200
+Processing by ProjectsController#index as HTML
+  Current user: anonymous
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (4.1ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.9ms)
+Started GET "/" for 127.0.0.1 at 2019-02-18 17:14:34 +0200
+Processing by WelcomeController#index as HTML
+  Current user: anonymous
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 1.1ms)
+Started GET "/login" for 127.0.0.1 at 2019-02-18 17:14:37 +0200
+Processing by AccountController#login as HTML
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (3.1ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-18 17:14:41 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1oTOTRPCgk6M8Ny1aImoSHI74Ganh2n/jXck644nBQwEQEirphhoC4dQBg7B1enMXpzDYCJdUZ7E3pB8bmg3FA==", "back_url"=>"http://0.0.0.0:3000/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admin' from 127.0.0.1 at 2019-02-18 15:14:41 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.5ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-18 17:14:47 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gBZs7mkfw9wPnqJvfBNehE0Q0xsNDYxqa5LciiMDzdBS0uoI3MUpmQQ+eNTVTx8AYbfwHYjXtAsiO2gdw0z/yA==", "back_url"=>"http://0.0.0.0:3000/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Failed login for 'admin' from 127.0.0.1 at 2019-02-18 15:14:47 UTC
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+Started POST "/login" for 127.0.0.1 at 2019-02-18 17:14:52 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+aJ2uXAqgeTzlkU9GEbs5iJ0QM1vhUzoF3AxGtvgxGkrZvBfxfBrofg2n4axGq1iDtNjy+pfdIle2YWNO6/2cQ==", "back_url"=>"http://0.0.0.0:3000/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+  Current user: anonymous
+Successful authentication for 'admin' from 127.0.0.1 at 2019-02-18 15:14:52 UTC
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 30ms (ActiveRecord: 18.6ms)
+Started GET "/" for 127.0.0.1 at 2019-02-18 17:14:52 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/my/password
+Filter chain halted as :check_password_change rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 7.6ms)
+Started GET "/my/password" for 127.0.0.1 at 2019-02-18 17:14:52 +0200
+Processing by MyController#password as HTML
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (2.0ms)
+Completed 200 OK in 31ms (Views: 10.3ms | ActiveRecord: 14.8ms)
+Started POST "/my/password" for 127.0.0.1 at 2019-02-18 17:15:08 +0200
+Processing by MyController#password as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UhC2pTtmdlWMqzoXi1ARIiz4CabOjia9TEa9IEX8n17W4FdTyMzZskFfYRFW5d7Vdg5Vi4iGt78HxZJ8G6HdgQ==", "password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]", "commit"=>"Apply"}
+  Current user: admin (id=1)
+  Rendering my/password.html.erb within layouts/base
+  Rendered my/password.html.erb within layouts/base (0.6ms)
+Completed 200 OK in 24ms (Views: 6.7ms | ActiveRecord: 14.1ms)
+Started POST "/my/password" for 127.0.0.1 at 2019-02-18 17:15:26 +0200
+Processing by MyController#password as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xMItKbfOY+OAz3lG6akZInGEwf2SOP3TYXH4URyMZQRAMszfRGTMBE07IkA0HNbVK3Kd0NQwbNEq8tcNQtEn2w==", "password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]", "commit"=>"Apply"}
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/my/account
+Completed 302 Found in 44ms (ActiveRecord: 29.1ms)
+Started GET "/my/account" for 127.0.0.1 at 2019-02-18 17:15:26 +0200
+Processing by MyController#account as HTML
+  Current user: admin (id=1)
+  Rendering my/account.html.erb within layouts/base
+  Rendered users/_mail_notifications.html.erb (4.4ms)
+  Rendered users/_preferences.html.erb (139.9ms)
+  Rendered my/_sidebar.html.erb (4.4ms)
+  Rendered my/account.html.erb within layouts/base (161.3ms)
+Completed 200 OK in 179ms (Views: 164.0ms | ActiveRecord: 10.0ms)
+Started POST "/my/account" for 127.0.0.1 at 2019-02-18 17:15:49 +0200
+Processing by MyController#account as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gkmd2lY/Cq9qCkkpeR/5WOXFNVdoOm7Y3CCCAbqZH0YGuXwspZWlSKf+Ei+kqjavvzNpei4y/9qXo61d5MRdmQ==", "user"=>{"firstname"=>"Radoslav", "lastname"=>"Marinov", "mail"=>"admin@example.net", "language"=>"", "mail_notification"=>"all", "notified_project_ids"=>[""]}, "commit"=>"Save", "pref"=>{"no_self_notified"=>"1", "hide_mail"=>"1", "time_zone"=>"", "comments_sorting"=>"asc", "warn_on_leaving_unsaved"=>"1", "textarea_font"=>""}}
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/my/account
+Completed 302 Found in 32ms (ActiveRecord: 20.2ms)
+Started GET "/my/account" for 127.0.0.1 at 2019-02-18 17:15:49 +0200
+Processing by MyController#account as HTML
+  Current user: admin (id=1)
+  Rendering my/account.html.erb within layouts/base
+  Rendered users/_mail_notifications.html.erb (3.0ms)
+  Rendered users/_preferences.html.erb (8.9ms)
+  Rendered my/_sidebar.html.erb (2.1ms)
+  Rendered my/account.html.erb within layouts/base (19.0ms)
+Completed 200 OK in 52ms (Views: 23.1ms | ActiveRecord: 7.9ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-18 17:15:53 +0200
+Processing by ProjectsController#index as HTML
+  Current user: admin (id=1)
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (11.2ms)
+Completed 200 OK in 53ms (Views: 10.3ms | ActiveRecord: 39.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2019-02-18 17:15:55 +0200
+Processing by ProjectsController#new as HTML
+  Current user: admin (id=1)
+  Rendering projects/new.html.erb within layouts/base
+  Rendered projects/_form.html.erb (6.6ms)
+  Rendered projects/new.html.erb within layouts/base (10.0ms)
+Completed 200 OK in 54ms (Views: 16.9ms | ActiveRecord: 13.9ms)
+Started POST "/projects" for 127.0.0.1 at 2019-02-18 17:16:01 +0200
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"acKwgCjXPTXeBASfnjkFci40y8lLjA3v3Lf2yOJUMsDtMlF2232S0hPwX5lDjMqFdMKX5A2EnO2XNNmUvAlwHw==", "project"=>{"name"=>"WarehouseProject", "description"=>"", "identifier"=>"ware", "homepage"=>"", "is_public"=>"1", "inherit_members"=>"0", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", ""]}, "continue"=>"Create and continue"}
+  Current user: admin (id=1)
+Redirected to http://0.0.0.0:3000/projects/new
+Completed 302 Found in 41ms (ActiveRecord: 15.0ms)
+Started GET "/projects/new" for 127.0.0.1 at 2019-02-18 17:16:01 +0200
+Processing by ProjectsController#new as HTML
+  Current user: admin (id=1)
+  Rendering projects/new.html.erb within layouts/base
+  Rendered projects/_form.html.erb (4.5ms)
+  Rendered projects/new.html.erb within layouts/base (6.6ms)
+Completed 200 OK in 26ms (Views: 13.5ms | ActiveRecord: 7.8ms)
+Started GET "/activity" for 127.0.0.1 at 2019-02-18 17:16:06 +0200
+Processing by ActivitiesController#index as HTML
+  Current user: admin (id=1)
+  Rendering activities/index.html.erb within layouts/base
+  Rendered activities/_activities.html.erb (0.7ms)
+  Rendered activities/index.html.erb within layouts/base (8.6ms)
+Completed 200 OK in 36ms (Views: 13.7ms | ActiveRecord: 11.6ms)
+Started GET "/issues" for 127.0.0.1 at 2019-02-18 17:16:06 +0200
+Processing by IssuesController#index as HTML
+  Current user: admin (id=1)
+  Rendering issues/index.html.erb within layouts/base
+  Rendered queries/_filters.html.erb (6.5ms)
+  Rendered queries/_columns.html.erb (2.8ms)
+  Rendered queries/_query_form.html.erb (15.3ms)
+  Rendered issues/_sidebar.html.erb (1.7ms)
+  Rendered issues/index.html.erb within layouts/base (29.8ms)
+Completed 200 OK in 82ms (Views: 38.0ms | ActiveRecord: 11.7ms)
+Started GET "/projects" for 127.0.0.1 at 2019-02-18 17:16:08 +0200
+Processing by ProjectsController#index as HTML
+  Current user: admin (id=1)
+  Rendering projects/index.html.erb within layouts/base
+  Rendered projects/index.html.erb within layouts/base (3.5ms)
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 4.7ms)
+Started GET "/admin" for 127.0.0.1 at 2019-02-18 17:16:12 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/_no_data.html.erb (4.6ms)
+  Rendered admin/_menu.html.erb (2.6ms)
+  Rendered admin/index.html.erb within layouts/admin (9.9ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (5.1ms)
+Completed 200 OK in 31ms (Views: 17.3ms | ActiveRecord: 8.0ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:16:14 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.6ms)
+  Rendered admin/_menu.html.erb (1.7ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (4.6ms)
+Completed 200 OK in 36ms (Views: 8.5ms | ActiveRecord: 7.7ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:17:02 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (0.3ms)
+  Rendered admin/_menu.html.erb (1.7ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (4.7ms)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 8.0ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:17:16 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.1ms)
+  Rendered admin/_menu.html.erb (4.2ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (18.8ms)
+Completed 200 OK in 92ms (Views: 24.8ms | ActiveRecord: 19.3ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:30:59 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.4ms)
+  Rendered admin/_menu.html.erb (4.4ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (19.2ms)
+Completed 200 OK in 98ms (Views: 26.0ms | ActiveRecord: 22.8ms)
+Started GET "/warehouse/products" for 127.0.0.1 at 2019-02-18 17:31:12 +0200
+  
+AbstractController::ActionNotFound (The action 'products' could not be found for ProductsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-openid (1.4.2) lib/rack/openid.rb:98:in `call'
+request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/admin/plugins/warehouse/products" for 127.0.0.1 at 2019-02-18 17:31:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/plugins/warehouse/products"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/warehouse/products" for 127.0.0.1 at 2019-02-18 17:31:48 +0200
+  
+AbstractController::ActionNotFound (The action 'products' could not be found for ProductsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-openid (1.4.2) lib/rack/openid.rb:98:in `call'
+request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:33:03 +0200
+  
+AbstractController::ActionNotFound (The action 'products' could not be found for ProductsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-openid (1.4.2) lib/rack/openid.rb:98:in `call'
+request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:33:19 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.5ms)
+  Rendered admin/_menu.html.erb (4.0ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (18.9ms)
+Completed 200 OK in 86ms (Views: 25.2ms | ActiveRecord: 12.7ms)
+Started GET "/products/" for 127.0.0.1 at 2019-02-18 17:33:28 +0200
+  
+AbstractController::ActionNotFound (The action 'products' could not be found for ProductsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-openid (1.4.2) lib/rack/openid.rb:98:in `call'
+request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:34:22 +0200
+Processing by AdminController#plugins as HTML
+  Current user: anonymous
+Redirected to http://0.0.0.0:3000/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2Fplugins
+Filter chain halted as :require_admin rendered or redirected
+Completed 302 Found in 33ms (ActiveRecord: 0.6ms)
+Started GET "/login?back_url=http%3A%2F%2F0.0.0.0%3A3000%2Fadmin%2Fplugins" for 127.0.0.1 at 2019-02-18 17:34:22 +0200
+Processing by AccountController#login as HTML
+  Parameters: {"back_url"=>"http://0.0.0.0:3000/admin/plugins"}
+  Current user: anonymous
+  Rendering account/login.html.erb within layouts/base
+  Rendered account/login.html.erb within layouts/base (3.3ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products/" for 127.0.0.1 at 2019-02-18 17:34:32 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 116ms (ActiveRecord: 55.3ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/products/" for 127.0.0.1 at 2019-02-18 17:34:34 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 16.1ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/" for 127.0.0.1 at 2019-02-18 17:34:44 +0200
+Processing by WelcomeController#index as HTML
+  Current user: admin (id=1)
+  Rendering welcome/index.html.erb within layouts/base
+  Rendered welcome/index.html.erb within layouts/base (11.4ms)
+Completed 200 OK in 40ms (Views: 26.8ms | ActiveRecord: 6.6ms)
+Started GET "/admin" for 127.0.0.1 at 2019-02-18 17:34:47 +0200
+Processing by AdminController#index as HTML
+  Current user: admin (id=1)
+  Rendering admin/index.html.erb within layouts/admin
+  Rendered admin/_no_data.html.erb (2.3ms)
+  Rendered admin/_menu.html.erb (2.1ms)
+  Rendered admin/index.html.erb within layouts/admin (5.9ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (5.3ms)
+Completed 200 OK in 28ms (Views: 12.3ms | ActiveRecord: 8.8ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:34:49 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.1ms)
+  Rendered admin/_menu.html.erb (1.6ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (5.4ms)
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 6.5ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:35:53 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.7ms)
+  Rendered admin/_menu.html.erb (4.2ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (19.9ms)
+Completed 200 OK in 103ms (Views: 27.8ms | ActiveRecord: 25.0ms)
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:35:56 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (0.4ms)
+  Rendered admin/_menu.html.erb (1.6ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (4.9ms)
+Completed 200 OK in 24ms (Views: 7.3ms | ActiveRecord: 14.9ms)
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:36:04 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 5.8ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/product" for 127.0.0.1 at 2019-02-18 17:36:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/product"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:36:14 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 14.1ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:36:22 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 9ms (ActiveRecord: 6.2ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:36:35 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 54ms (ActiveRecord: 51.7ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:37:46 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 116ms (ActiveRecord: 53.5ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:37:54 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 13.1ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:39:31 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 92ms (ActiveRecord: 20.5ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:43:18 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+Completed 406 Not Acceptable in 80ms (ActiveRecord: 17.2ms)
+  
+ActionController::UnknownFormat (ProductsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Started GET "/admin/plugins/products" for 127.0.0.1 at 2019-02-18 17:43:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/plugins/products"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/admin/plugins/product" for 127.0.0.1 at 2019-02-18 17:43:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/plugins/product"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/admin/plugins" for 127.0.0.1 at 2019-02-18 17:43:53 +0200
+Processing by AdminController#plugins as HTML
+  Current user: admin (id=1)
+  Rendering admin/plugins.html.erb within layouts/admin
+  Rendered admin/plugins.html.erb within layouts/admin (1.3ms)
+  Rendered admin/_menu.html.erb (4.3ms)
+  Rendering layouts/base.html.erb
+  Rendered layouts/base.html.erb (21.1ms)
+Completed 200 OK in 38ms (Views: 27.3ms | ActiveRecord: 8.0ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/product" for 127.0.0.1 at 2019-02-18 17:46:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/product"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/content_length.rb:15:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/radoslav/.rbenv/versions/2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:46:27 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (1.9ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 15.9ms)
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>Products#show</h2>
+    2: <h1>Hello from products</h1>
+    3: # <% @products.each do |product| %>
+    4: #     <p>
+    5: #         <%=product.title%>
+    6: #     </p>
+  
+plugins/redmine_warehouse/app/views/products/show.html.erb:3:in `_plugins_redmine_warehouse_app_views_products_show_html_erb___2924853631776394648_70350157645160'
+lib/redmine/sudo_mode.rb:63:in `sudo_mode'
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 17:47:28 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (0.4ms)
+Completed 200 OK in 89ms (Views: 22.4ms | ActiveRecord: 19.3ms)
