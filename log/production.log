@@ -2757,3 +2757,39 @@ Processing by ProductsController#show as HTML
   Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
   Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (5.9ms)
 Completed 200 OK in 136ms (Views: 27.6ms | ActiveRecord: 57.8ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 20:28:10 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.3ms)
+Completed 200 OK in 100ms (Views: 29.8ms | ActiveRecord: 20.0ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 20:29:54 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.8ms)
+Completed 200 OK in 101ms (Views: 29.7ms | ActiveRecord: 21.8ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 20:30:30 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.8ms)
+Completed 200 OK in 102ms (Views: 30.6ms | ActiveRecord: 18.2ms)
+Creating scope :system. Overwriting existing method Enumeration.system.
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+Started GET "/products" for 127.0.0.1 at 2019-02-18 20:31:07 +0200
+Processing by ProductsController#show as HTML
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.4ms)
+Completed 200 OK in 98ms (Views: 28.1ms | ActiveRecord: 22.2ms)
