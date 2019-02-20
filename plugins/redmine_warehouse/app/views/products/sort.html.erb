@@ -1,16 +1,13 @@
-
-<body>
-
-<h2>Products#show</h2>
-<h1>Hello from pr oducts</h1>
+<h1>Sorted products</h1>
+<h1>Sort = <%= @sort %></h1>
 
 <table onclick="me()">
     <tr>
         <th>
-        <%= link_to  "Title", products_sorted_path(sort: "title") %>
-            
+            <%= link_to  "Title", products_sorted_path(sort: "title") %>
         </th>
         <th>
+            <%= link_to  "Price", products_sorted_path(sort: "price") %>
             price
         </th>
         <th>
@@ -33,4 +30,3 @@
     </tr>
 <% end %>
 </table >
-</body>

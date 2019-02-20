@@ -23,11 +23,11 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: mysql2
-  database: redmine_test
+  adapter: sqlite3
+  database: db/redmine.sqlite3
   host: localhost
   username: root
-  password: ""
+  password: "alphatraper"
   encoding: utf8
 
 # PostgreSQL configuration example

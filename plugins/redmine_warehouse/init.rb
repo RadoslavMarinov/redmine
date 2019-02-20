@@ -6,3 +6,6 @@ Redmine::Plugin.register :redmine_warehouse do
   url 'http://example.com/path/to/plugin'
   author_url 'http://example.com/about'
 end
+Redmine::Plugin.register :redmine_warehouse do
+  menu :application_menu, :Warehouse, { :controller => 'products', :action => 'show' }, :caption => 'Waaarehouseeee'
+end
