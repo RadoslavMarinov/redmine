@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def show
+    @project = Project.find(params[:project_id])
     @products = Warehouse.all
   end
 

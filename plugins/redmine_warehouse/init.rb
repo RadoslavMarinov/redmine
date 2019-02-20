@@ -7,5 +7,11 @@ Redmine::Plugin.register :redmine_warehouse do
   author_url 'http://example.com/about'
 end
 Redmine::Plugin.register :redmine_warehouse do
-  menu :application_menu, :Warehouse, { :controller => 'products', :action => 'show' }, :caption => 'Waaarehouseeee'
+  # menu :application_menu, :Warehouse, { :controller => 'products', :action => 'show' }, :caption => 'Waaarehouseeee'
+
+  permission :view_products, :products => :show
+  permission :sort_products, :products => :sort
+
+  menu :project_menu, :Warehouse, { :controller => 'products', :action => 'show' }, :caption => 'Waaaareeeeehouseee', :after => :activity, :param => :project_id
+
 end

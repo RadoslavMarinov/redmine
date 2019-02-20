@@ -9749,3 +9749,406 @@ Processing by ProductsController#sort as HTML
 Completed 200 OK in 20ms (Views: 10.8ms | ActiveRecord: 6.4ms)
 
 
+Started GET "/projects" for 127.0.0.1 at 2019-02-20 20:43:32 +0200
+Processing by ProjectsController#index as HTML
+  [1m[36mToken Update All (5.9ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:43:32.382904' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (projects.status <> 9) AND "projects"."status" = ? ORDER BY "projects"."lft" ASC[0m  [["status", 1]]
+  Rendering projects/index.html.erb within layouts/base
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ?[0m  [["user_id", 1], ["status", 9]]
+  Rendered projects/index.html.erb within layouts/base (3.6ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-20 20:43:36 +0200
+Processing by ProjectsController#index as HTML
+  [1m[36mToken Update All (6.1ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:43:36.775817' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (projects.status <> 9) AND "projects"."status" = ? ORDER BY "projects"."lft" ASC[0m  [["status", 1]]
+  Rendering projects/index.html.erb within layouts/base
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ?[0m  [["user_id", 1], ["status", 9]]
+  Rendered projects/index.html.erb within layouts/base (3.6ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-20 20:45:12 +0200
+Creating scope :system. Overwriting existing method Enumeration.system.
+Processing by ProjectsController#index as HTML
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_lifetime"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_timeout"], ["LIMIT", 1]]
+  [1m[36mToken Update All (49.8ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:45:12.793702' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_loggedin"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_anonymous"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (projects.status <> 9) AND "projects"."status" = ? ORDER BY "projects"."lft" ASC[0m  [["status", 1]]
+  Rendering projects/index.html.erb within layouts/base
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ?[0m  [["user_id", 1], ["status", 9]]
+  Rendered projects/index.html.erb within layouts/base (34.4ms)
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "app_title"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "ui_theme"], ["LIMIT", 1]]
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "gravatar_enabled"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 287ms (Views: 56.3ms | ActiveRecord: 57.8ms)
+
+
+Started GET "/projects/warehouse" for 127.0.0.1 at 2019-02-20 20:45:15 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouse"}
+  [1m[36mToken Update All (6.2ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:45:15.211529' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members" INNER JOIN "users" ON "users"."id" = "members"."user_id" WHERE "members"."project_id" = ? AND "users"."type" = ? AND "users"."status" = ?[0m  [["project_id", 1], ["type", "User"], ["status", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."parent_id" = ? AND (projects.status <> 9) ORDER BY "projects"."lft" ASC[0m  [["parent_id", 1]]
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" WHERE "news"."project_id" = ? ORDER BY news.created_on DESC LIMIT ?[0m  [["project_id", 1], ["LIMIT", 5]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "display_subprojects_issues"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" INNER JOIN "issue_statuses" ON "issue_statuses"."id" = "issues"."status_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND "issue_statuses"."is_closed" = ? AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m  [["is_closed", 0]]
+  [1m[36mTracker Load (0.1ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m
+  [1m[36mCACHE Tracker Load (0.0ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("time_entries"."hours") FROM "time_entries" INNER JOIN "projects" ON "projects"."id" = "time_entries"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='time_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2)))[0m
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/base
+  [1m[36mCustomField Load (0.2ms)[0m  [1m[34mSELECT "custom_fields".* FROM "custom_fields" WHERE (type = 'ProjectCustomField') ORDER BY "custom_fields"."position" ASC[0m
+  [1m[36mTracker Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "trackers".* FROM "trackers" INNER JOIN "projects_trackers" ON "projects_trackers"."tracker_id" = "trackers"."id" INNER JOIN "projects" ON "projects"."id" = "projects_trackers"."project_id" INNER JOIN "enabled_modules" ON "enabled_modules"."project_id" = "projects"."id" WHERE (projects.status <> 9) AND "enabled_modules"."name" = ? AND (projects.lft >= 1 AND projects.rgt <= 2) AND (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) ORDER BY "trackers"."position" ASC[0m  [["name", "issue_tracking"]]
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "timespan_format"], ["LIMIT", 1]]
+  Rendered projects/_members_box.html.erb (0.4ms)
+  Rendered projects/show.html.erb within layouts/base (10.8ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[36mTracker Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "new_item_menu_tab"], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.1ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 160ms (Views: 56.5ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/projects/warehouse" for 127.0.0.1 at 2019-02-20 20:47:29 +0200
+Creating scope :system. Overwriting existing method Enumeration.system.
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouse"}
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_lifetime"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_timeout"], ["LIMIT", 1]]
+  [1m[36mToken Update All (11.4ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:47:29.614081' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_loggedin"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_anonymous"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" INNER JOIN "users" ON "users"."id" = "members"."user_id" WHERE "members"."project_id" = ? AND "users"."type" = ? AND "users"."status" = ?[0m  [["project_id", 1], ["type", "User"], ["status", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."parent_id" = ? AND (projects.status <> 9) ORDER BY "projects"."lft" ASC[0m  [["parent_id", 1]]
+  [1m[36mNews Load (0.1ms)[0m  [1m[34mSELECT  "news".* FROM "news" WHERE "news"."project_id" = ? ORDER BY news.created_on DESC LIMIT ?[0m  [["project_id", 1], ["LIMIT", 5]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "display_subprojects_issues"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" INNER JOIN "issue_statuses" ON "issue_statuses"."id" = "issues"."status_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND "issue_statuses"."is_closed" = ? AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m  [["is_closed", 0]]
+  [1m[36mTracker Load (0.1ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m
+  [1m[36mCACHE Tracker Load (0.0ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("time_entries"."hours") FROM "time_entries" INNER JOIN "projects" ON "projects"."id" = "time_entries"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='time_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2)))[0m
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/base
+  [1m[36mCustomField Load (0.2ms)[0m  [1m[34mSELECT "custom_fields".* FROM "custom_fields" WHERE (type = 'ProjectCustomField') ORDER BY "custom_fields"."position" ASC[0m
+  [1m[36mTracker Load (0.3ms)[0m  [1m[34mSELECT DISTINCT "trackers".* FROM "trackers" INNER JOIN "projects_trackers" ON "projects_trackers"."tracker_id" = "trackers"."id" INNER JOIN "projects" ON "projects"."id" = "projects_trackers"."project_id" INNER JOIN "enabled_modules" ON "enabled_modules"."project_id" = "projects"."id" WHERE (projects.status <> 9) AND "enabled_modules"."name" = ? AND (projects.lft >= 1 AND projects.rgt <= 2) AND (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) ORDER BY "trackers"."position" ASC[0m  [["name", "issue_tracking"]]
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "timespan_format"], ["LIMIT", 1]]
+  Rendered projects/_members_box.html.erb (0.4ms)
+  Rendered projects/show.html.erb within layouts/base (30.4ms)
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "app_title"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "ui_theme"], ["LIMIT", 1]]
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "gravatar_enabled"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[36mTracker Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "new_item_menu_tab"], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.1ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 389ms (Views: 103.4ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:47:35 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (6.3ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:47:35.379412' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.2ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.6ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 27ms (Views: 15.3ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:48:42 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (5.7ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:48:42.207313' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.1ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (1.4ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 21ms (Views: 10.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-20 20:49:12 +0200
+Processing by ProjectsController#index as HTML
+  [1m[36mToken Update All (12.5ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:49:12.394961' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (projects.status <> 9) AND "projects"."status" = ? ORDER BY "projects"."lft" ASC[0m  [["status", 1]]
+  Rendering projects/index.html.erb within layouts/base
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ?[0m  [["user_id", 1], ["status", 9]]
+  Rendered projects/index.html.erb within layouts/base (3.7ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 41ms (Views: 24.3ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/projects/warehouse" for 127.0.0.1 at 2019-02-20 20:49:15 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouse"}
+  [1m[36mToken Update All (26.1ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:49:15.176694' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members" INNER JOIN "users" ON "users"."id" = "members"."user_id" WHERE "members"."project_id" = ? AND "users"."type" = ? AND "users"."status" = ?[0m  [["project_id", 1], ["type", "User"], ["status", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."parent_id" = ? AND (projects.status <> 9) ORDER BY "projects"."lft" ASC[0m  [["parent_id", 1]]
+  [1m[36mNews Load (0.1ms)[0m  [1m[34mSELECT  "news".* FROM "news" WHERE "news"."project_id" = ? ORDER BY news.created_on DESC LIMIT ?[0m  [["project_id", 1], ["LIMIT", 5]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" INNER JOIN "issue_statuses" ON "issue_statuses"."id" = "issues"."status_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND "issue_statuses"."is_closed" = ? AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m  [["is_closed", 0]]
+  [1m[36mTracker Load (0.1ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m
+  [1m[36mCACHE Tracker Load (0.0ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("time_entries"."hours") FROM "time_entries" INNER JOIN "projects" ON "projects"."id" = "time_entries"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='time_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2)))[0m
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/base
+  [1m[36mCustomField Load (0.2ms)[0m  [1m[34mSELECT "custom_fields".* FROM "custom_fields" WHERE (type = 'ProjectCustomField') ORDER BY "custom_fields"."position" ASC[0m
+  [1m[36mTracker Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "trackers".* FROM "trackers" INNER JOIN "projects_trackers" ON "projects_trackers"."tracker_id" = "trackers"."id" INNER JOIN "projects" ON "projects"."id" = "projects_trackers"."project_id" INNER JOIN "enabled_modules" ON "enabled_modules"."project_id" = "projects"."id" WHERE (projects.status <> 9) AND "enabled_modules"."name" = ? AND (projects.lft >= 1 AND projects.rgt <= 2) AND (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) ORDER BY "trackers"."position" ASC[0m  [["name", "issue_tracking"]]
+  Rendered projects/_members_box.html.erb (0.4ms)
+  Rendered projects/show.html.erb within layouts/base (7.2ms)
+  [1m[36mUserPreference Load (0.2ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[36mTracker Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.1ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 24.6ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:49:18 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (8.3ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:49:18.390593' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.1ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (1.3ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 22ms (Views: 10.6ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:49:25 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (6.6ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:49:25.698043' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.2ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (3.5ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 36ms (Views: 22.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:49:48 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (5.6ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:49:48.876992' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.3ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (3.9ms)
+  [1m[36mUserPreference Load (0.2ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+Completed 200 OK in 46ms (Views: 33.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/projects/warehouse" for 127.0.0.1 at 2019-02-20 20:50:19 +0200
+Creating scope :system. Overwriting existing method Enumeration.system.
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"warehouse"}
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_lifetime"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_timeout"], ["LIMIT", 1]]
+  [1m[36mToken Update All (12.8ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:50:19.973633' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_loggedin"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_anonymous"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" INNER JOIN "users" ON "users"."id" = "members"."user_id" WHERE "members"."project_id" = ? AND "users"."type" = ? AND "users"."status" = ?[0m  [["project_id", 1], ["type", "User"], ["status", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."parent_id" = ? AND (projects.status <> 9) ORDER BY "projects"."lft" ASC[0m  [["parent_id", 1]]
+  [1m[36mNews Load (0.1ms)[0m  [1m[34mSELECT  "news".* FROM "news" WHERE "news"."project_id" = ? ORDER BY news.created_on DESC LIMIT ?[0m  [["project_id", 1], ["LIMIT", 5]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "display_subprojects_issues"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" INNER JOIN "issue_statuses" ON "issue_statuses"."id" = "issues"."status_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND "issue_statuses"."is_closed" = ? AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m  [["is_closed", 0]]
+  [1m[36mTracker Load (0.1ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS count_all, "issues"."tracker_id" AS issues_tracker_id FROM "issues" INNER JOIN "projects" ON "projects"."id" = "issues"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2))) GROUP BY "issues"."tracker_id"[0m
+  [1m[36mCACHE Tracker Load (0.0ms)[0m  [1m[34mSELECT "trackers".* FROM "trackers" WHERE "trackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("time_entries"."hours") FROM "time_entries" INNER JOIN "projects" ON "projects"."id" = "time_entries"."project_id" WHERE (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='time_tracking')) AND ((projects.id = 1 OR (projects.lft > 1 AND projects.rgt < 2)))[0m
+  [1m[36mToken Load (0.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" WHERE "tokens"."user_id" = ? AND (action='feeds') LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/base
+  [1m[36mCustomField Load (0.3ms)[0m  [1m[34mSELECT "custom_fields".* FROM "custom_fields" WHERE (type = 'ProjectCustomField') ORDER BY "custom_fields"."position" ASC[0m
+  [1m[36mTracker Load (0.4ms)[0m  [1m[34mSELECT DISTINCT "trackers".* FROM "trackers" INNER JOIN "projects_trackers" ON "projects_trackers"."tracker_id" = "trackers"."id" INNER JOIN "projects" ON "projects"."id" = "projects_trackers"."project_id" INNER JOIN "enabled_modules" ON "enabled_modules"."project_id" = "projects"."id" WHERE (projects.status <> 9) AND "enabled_modules"."name" = ? AND (projects.lft >= 1 AND projects.rgt <= 2) AND (projects.status <> 9 AND EXISTS (SELECT 1 AS one FROM enabled_modules em WHERE em.project_id = projects.id AND em.name='issue_tracking')) ORDER BY "trackers"."position" ASC[0m  [["name", "issue_tracking"]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "timespan_format"], ["LIMIT", 1]]
+  Rendered projects/_members_box.html.erb (0.5ms)
+  Rendered projects/show.html.erb within layouts/base (31.4ms)
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "app_title"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "ui_theme"], ["LIMIT", 1]]
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "gravatar_enabled"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[36mTracker Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "new_item_menu_tab"], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.1ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 388ms (Views: 94.6ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:50:27 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (13.6ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:50:27.219943' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.2ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (6.3ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mTracker Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.2ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 23.1ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/products?project_id=warehouse" for 127.0.0.1 at 2019-02-20 20:50:40 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"project_id"=>"warehouse"}
+  [1m[36mToken Update All (7.0ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:50:40.605181' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."identifier" = ? LIMIT ?[0m  [["identifier", "warehouse"], ["LIMIT", 1]]
+  Rendering plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base
+  [1m[36mWarehouse Load (0.2ms)[0m  [1m[34mSELECT "warehouses".* FROM "warehouses"[0m
+  Rendered plugins/redmine_warehouse/app/views/products/show.html.erb within layouts/base (1.5ms)
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "enabled_modules"."name" FROM "enabled_modules" WHERE "enabled_modules"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36mTracker Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Tracker Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "trackers" INNER JOIN "projects_trackers" ON "trackers"."id" = "projects_trackers"."tracker_id" WHERE "projects_trackers"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mVersion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "versions" INNER JOIN "projects" ON "projects"."id" = "versions"."project_id" WHERE (projects.id = 1 OR (projects.status <> 9 AND ( versions.sharing = 'system' OR (projects.lft >= 1 AND projects.rgt <= 2 AND versions.sharing = 'tree') OR (projects.lft < 1 AND projects.rgt > 2 AND versions.sharing IN ('hierarchy', 'descendants')) OR (projects.lft > 1 AND projects.rgt < 2 AND versions.sharing = 'hierarchy')))) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1m[34mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mBoard Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "boards" WHERE "boards"."project_id" = ? LIMIT ?[0m  [["project_id", 1], ["LIMIT", 1]]
+  [1m[36mRepository Load (0.1ms)[0m  [1m[34mSELECT  "repositories".* FROM "repositories" WHERE "repositories"."project_id" = ? AND "repositories"."is_default" = ? LIMIT ?[0m  [["project_id", 1], ["is_default", 1], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/roles/permissions" for 127.0.0.1 at 2019-02-20 20:52:32 +0200
+Processing by RolesController#permissions as HTML
+  [1m[36mToken Update All (50.4ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:52:32.427217' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."builtin" ASC, "roles"."position" ASC[0m
+  Rendering roles/permissions.html.erb within layouts/admin
+  Rendered roles/permissions.html.erb within layouts/admin (58.7ms)
+  Rendered admin/_menu.html.erb (4.7ms)
+  Rendering layouts/base.html.erb
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  Rendered layouts/base.html.erb (17.3ms)
+Completed 200 OK in 184ms (Views: 88.7ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/roles/permissions" for 127.0.0.1 at 2019-02-20 20:54:31 +0200
+Processing by RolesController#permissions as HTML
+Creating scope :sorted. Overwriting existing method Group.sorted.
+Creating scope :sorted. Overwriting existing method User.sorted.
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_lifetime"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "session_timeout"], ["LIMIT", 1]]
+  [1m[36mToken Update All (14.9ms)[0m  [1m[33mUPDATE "tokens" SET "updated_on" = '2019-02-20 20:54:31.495636' WHERE "tokens"."user_id" = ? AND "tokens"."value" = ? AND "tokens"."action" = ?[0m  [["user_id", 1], ["value", "ed9222a82bf77c051b87525a3f1943843ca3475c"], ["action", "session"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT MAX("settings"."updated_on") FROM "settings"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('User', 'AnonymousUser') AND "users"."status" = ? AND "users"."id" = ? LIMIT ?[0m  [["status", 1], ["id", 1], ["LIMIT", 1]]
+  Current user: admin (id=1)
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_loggedin"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "force_default_language_for_anonymous"], ["LIMIT", 1]]
+  [1m[36mRole Load (0.5ms)[0m  [1m[34mSELECT "roles".* FROM "roles" ORDER BY "roles"."builtin" ASC, "roles"."position" ASC[0m
+  Rendering roles/permissions.html.erb within layouts/admin
+  Rendered roles/permissions.html.erb within layouts/admin (83.6ms)
+  Rendered admin/_menu.html.erb (5.1ms)
+  Rendering layouts/base.html.erb
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "app_title"], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.1ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "ui_theme"], ["LIMIT", 1]]
+  [1m[36mUserPreference Load (0.1ms)[0m  [1m[34mSELECT  "user_preferences".* FROM "user_preferences" WHERE "user_preferences"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = ? ORDER BY "settings"."id" DESC LIMIT ?[0m  [["name", "gravatar_enabled"], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects"."id", "projects"."name", "projects"."identifier", "projects"."lft", "projects"."rgt" FROM "projects" INNER JOIN "members" ON "projects"."id" = "members"."project_id" WHERE "members"."user_id" = ? AND "projects"."status" != ? AND "projects"."status" = ?[0m  [["user_id", 1], ["status", 9], ["status", 1]]
+  Rendered layouts/base.html.erb (69.7ms)
+Completed 200 OK in 308ms (Views: 162.2ms | ActiveRecord: 23.1ms)
+
+
