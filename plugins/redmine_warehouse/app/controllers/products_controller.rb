@@ -11,10 +11,7 @@ class ProductsController < ApplicationController
     
     if @sort == "title"
       @products = @products.order(:title);
-    elsif @sort == "price"
-      @products = @products.order(:price);
     end
-
   end
 
 end
