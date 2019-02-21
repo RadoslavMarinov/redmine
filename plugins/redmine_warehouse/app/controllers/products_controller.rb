@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
   # EDIT
   def edit_pos
     @post_data = params
+
     @title = params[:title]
     @amount = params[:amount]
     @price = params[:price]
@@ -26,5 +27,8 @@ class ProductsController < ApplicationController
 
   #SAVE_POS save position after being edited from 
   # "edit_pos" form
+  def save_pos
+
+  end
 
 end
