@@ -1,0 +1,12 @@
+<h1>YEaaa this is edit posssiotion</h1>
+<%=@post_data%>
+<div>
+<%= form_for :products, :url => "/products/" do |f| %>
+ Title <%= f.text_field :title, :value => @title %><br>
+ Price <%= f.text_field :price, :value => @price %>
+ Amount <%= f.text_field :amount, :value => @amount %>
+ Issue ID <%= f.text_field :issue_id, :value => @issue_id %>
+ Release date <%= f.text_field :release_date, :value => @release_date %>
+ <%= f.submit "Save"%>
+<% end %>
+</div>

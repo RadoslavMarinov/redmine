@@ -17,6 +17,9 @@
         <th>
             Issue
         </th>
+        <th>
+            
+        </th>
     </tr>
 <% @products.each do |product| %>
     <tr>
@@ -25,6 +28,15 @@
         <td><%=product.amount%></td>
         <td><%=product.release_date%></td>
         <td><%=product.issue_id%></td>
+        <td>
+            <%= link_to "Edit", products_edit_pos_path(
+                title: product.title,
+                price: product.price,
+                amount: product.amount,
+                release_date: product.release_date,
+                issue_id: product.issue_id
+                ), method: :post %>
+        </td>
     </tr>
 <% end %>
 </table >
