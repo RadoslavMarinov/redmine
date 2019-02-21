@@ -5,6 +5,9 @@ class ProductsController < ApplicationController
   end
 
   def sort
+    @project_id = params[:project_id]
+    @project = Project.find(params[:project_id])
+
     @sort = params[:sort]
     
     @products = Warehouse.all

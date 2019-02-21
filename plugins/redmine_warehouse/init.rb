@@ -12,6 +12,6 @@ Redmine::Plugin.register :redmine_warehouse do
   permission :view_products, :products => :show
   permission :sort_products, :products => :sort
 
-  menu :project_menu, :Warehouse, { :controller => 'products', :action => 'show' }, :caption => 'Waaaareeeeehouseee', :after => :activity, :param => :project_id
+  menu :project_menu, :Warehouse, { :controller => 'products', :action => 'sort' }, :caption => 'Waaaareeeeehouseee', :after => :activity, :param => :project_id
 
 end
