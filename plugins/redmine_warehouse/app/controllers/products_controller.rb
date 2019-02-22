@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+
+  @@project_g = Project.find("warehouse") 
+
   def show
     @project = Project.find(params[:project_id])
     @products = Warehouse.all
@@ -6,7 +9,7 @@ class ProductsController < ApplicationController
 
   def sort
     @project_id = params[:project_id]
-    @project = Project.find(params[:project_id])
+    @project = @@project_g
 
     @sort = params[:sort]
     
@@ -54,6 +57,24 @@ class ProductsController < ApplicationController
     item.save
     redirect_to products_path project_id: @project_id 
     # Warehouse.update()
+  end
+
+  #DELETE POSITION
+  # find and delete posiotion by given title (titles must be unique)
+  def delete_pos
+    @project_id = params[:project_id]
+    @project = Project.find(@project_id)
+    @title = params[:title]
+
+    Warehouse.where(title: @title).destroy_all
+    redirect_to products_path project_id: @project_id
+  end
+
+  #ADD POSITION
+  #adds new position
+  def add_pos
+
+    # redirect_to products_path project_id: @project_id
   end
 
 end

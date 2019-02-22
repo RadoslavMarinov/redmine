@@ -1,0 +1,14 @@
+<h1>Add new position</h1>
+
+<div>
+    <%= form_for :products,  :url => "/products/edit/save" do |f| %>
+        Title<br><%= f.text_field :title %><br>   
+        Price<br><%= f.text_field :price %><br>
+        Amount<br><%= f.text_field :amount %><br>
+        Issue ID<br><%= f.text_field :issue_id %><br>
+        Released<br><%= f.text_field :release_date %><br>
+        <%= f.hidden_field :original_title, :value => "@title" %>
+        <%= f.hidden_field :project_id, :value => "@project_id" %>
+        <%= f.submit "Add"%>
+<% end %>
+</div>

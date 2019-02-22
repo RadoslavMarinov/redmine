@@ -1,5 +1,5 @@
 <h1>Sorted products</h1>
-
+<%= link_to  "Add New Item", products_add_pos_path(:project_id => @project_id, :sort => "title") %>
 <table onclick="me()">
     <tr>
         <th>
@@ -37,6 +37,9 @@
                 issue_id: product.issue_id,
                 project_id:  @project_id
                 ), method: :post %>
+        </td>
+        <td>
+            <%= link_to  "Delete",  products_delete_pos_path(project_id:  @project_id, title: product.title), method: :get  %> 
         </td>
     </tr>
 <% end %>
