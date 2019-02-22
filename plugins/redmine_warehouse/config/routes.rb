@@ -14,5 +14,8 @@ get "products/position/delete", :to => 'products#delete_pos', as: 'products_dele
 #adds new position
 get "products/position/add", :to => 'products#add_pos', as: 'products_add_pos'
 
+#saves new position
+post "/products/position/add/save", :to => 'products#save_new_pos', as: 'products_save_new_pos' 
+
 # Save edited storage position 
 post "products/edit/save", :to => 'products#save_edited_pos', as: 'products_save_edited_pos'

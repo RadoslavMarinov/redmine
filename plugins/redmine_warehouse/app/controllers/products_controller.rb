@@ -1,3 +1,9 @@
+
+#TODOS:
+# * Get rid of project_id param - not necessary.
+#     The global var @@project_g does the job
+# * 
+#
 class ProductsController < ApplicationController
 
   @@project_g = Project.find("warehouse") 
@@ -63,7 +69,7 @@ class ProductsController < ApplicationController
   # find and delete posiotion by given title (titles must be unique)
   def delete_pos
     @project_id = params[:project_id]
-    @project = Project.find(@project_id)
+    @project = @@project_g
     @title = params[:title]
 
     Warehouse.where(title: @title).destroy_all
@@ -75,6 +81,19 @@ class ProductsController < ApplicationController
   def add_pos
 
     # redirect_to products_path project_id: @project_id
+  end
+
+  #SAVE NEW POSITION
+  def save_new_pos
+    @products = params[:products]
+    Warehouse.create( title: @products[:title],
+                      price: @products[:price],
+                      amount: @products[:amount],
+                      release_date: @products[:release_date],
+                      issue_id: @products[:issue_id]
+                      )
+
+    redirect_to products_path 
   end
 
 end
