@@ -19,6 +19,8 @@ class ProductsController < ApplicationController
 
   # EDIT
   def edit_pos
+    @project = Project.find(params[:project_id])
+    @project_id = params[:project_id]
     @post_data = params
 
     @title = params[:title]
@@ -31,8 +33,9 @@ class ProductsController < ApplicationController
   #SAVE_EDITED_POS save position after being edited from 
   # "edit_pos" form
   def save_edited_pos
+
     @products = params[:products]
-    
+    @project_id = @products[:project_id]
     original_title = @products[:original_title]
 
     title = @products[:title]
@@ -49,6 +52,7 @@ class ProductsController < ApplicationController
     item.issue_id = issue_id
     item.release_date = release_date
     item.save
+    redirect_to products_path project_id: @project_id 
     # Warehouse.update()
   end
 
