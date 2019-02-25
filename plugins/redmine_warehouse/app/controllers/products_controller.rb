@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
   # EDIT
   def edit_pos
-    @project = Project.find(params[:project_id])
+    @project = @@project_g
     @project_id = params[:project_id]
     @post_data = params
 
@@ -42,10 +42,9 @@ class ProductsController < ApplicationController
   #SAVE_EDITED_POS save position after being edited from 
   # "edit_pos" form
   def save_edited_pos
-
     @products = params[:products]
-    @project_id = @products[:project_id]
-    original_title = @products[:original_title]
+    @project = @@project_g
+    original_title = @products[:original_title] 
 
     title = @products[:title]
     price = @products[:price]

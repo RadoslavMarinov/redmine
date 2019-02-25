@@ -30,16 +30,17 @@
         <td><%=product.issue_id%></td>
         <td>
             <%= link_to "Edit", products_edit_pos_path(
+                original_title: product.title,
                 title: product.title,
                 price: product.price,
                 amount: product.amount,
                 release_date: product.release_date,
                 issue_id: product.issue_id,
                 project_id:  @project_id
-                ), method: :post %>
+                ) %>
         </td>
         <td>
-            <%= link_to  "Delete",  products_delete_pos_path(project_id:  @project_id, title: product.title), method: :get  %> 
+            <%= link_to  "Delete",  products_delete_pos_path(project_id:  @project_id, title: product.title), method: :delete  %> 
         </td>
     </tr>
 <% end %>

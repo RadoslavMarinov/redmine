@@ -1,7 +1,8 @@
 <h1>YEaaa this is edit posssiotion</h1>
 <%=@post_data%>
+
 <div>
-    <%= form_for :products,  :url => "/products/edit/save" do |f| %>
+    <%= form_for :products,  :url => "/products/position" do |f| %>
     Title<br><%= f.text_field :title, :value => @title %><br>
     Price<br><%= f.text_field :price, :value => @price %><br>
     Amount<br><%= f.text_field :amount, :value => @amount %><br>
@@ -12,3 +13,4 @@
     <%= f.submit "Save"%>
 <% end %>
 </div>
+
