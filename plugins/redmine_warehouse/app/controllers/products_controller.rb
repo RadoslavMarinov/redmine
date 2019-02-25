@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # EDIT
+  # Displays edit-position form
   def edit_pos
     @project = @@project_g
     @project_id = params[:project_id]
@@ -39,8 +39,7 @@ class ProductsController < ApplicationController
     @release_date = params[:release_date]
   end
 
-  #SAVE_EDITED_POS save position after being edited from 
-  # "edit_pos" form
+  # Save position after being edited from "edit_pos" form
   def save_edited_pos
     @products = params[:products]
     @project = @@project_g
@@ -52,7 +51,6 @@ class ProductsController < ApplicationController
     issue_id = @products[:issue_id]
     release_date = @products[:release_date]
 
-    # "title = " + title
     item = Warehouse.where(:title => original_title).take  #where("title = #{@title}").take
     item.title = title
     item.price = price
@@ -61,11 +59,9 @@ class ProductsController < ApplicationController
     item.release_date = release_date
     item.save
     redirect_to products_path project_id: @project_id 
-    # Warehouse.update()
   end
 
-  #DELETE POSITION
-  # find and delete posiotion by given title (titles must be unique)
+  # Find and delete posiotion by given title (titles must be unique)
   def delete_pos
     @project_id = params[:project_id]
     @project = @@project_g
@@ -75,14 +71,12 @@ class ProductsController < ApplicationController
     redirect_to products_path project_id: @project_id
   end
 
-  #ADD POSITION
   #adds new position
   def add_pos
 
-    # redirect_to products_path project_id: @project_id
   end
 
-  #SAVE NEW POSITION
+  #Save newly created position
   def save_new_pos
     @products = params[:products]
     Warehouse.create( title: @products[:title],
